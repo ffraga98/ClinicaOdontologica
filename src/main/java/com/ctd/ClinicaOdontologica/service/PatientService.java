@@ -33,11 +33,16 @@ public class PatientService implements IService<PatientDTO> {
         }
 
         Patient p = DTO2entity(patient);
-
-        try {
-            residenceService.findById(p.getHomeId());
-        }catch( Exception | NotFoundException e){
+        if( p.getHomeId() == null ){
             residenceService.add(p.getHome());
+        }else{
+            Residence r = null;
+            try {
+                r = residenceService.findById(p.getHomeId());
+                p.setHome(r);
+            } catch (NotFoundException e) {
+                throw new BadRequestException("Error PatientService: Residence entered doesn't exist.");
+            }
         }
 
         patientRepository.save(p);
@@ -54,6 +59,7 @@ public class PatientService implements IService<PatientDTO> {
         Optional<Patient> p = patientRepository.findById(patient.getId());
         if (!p.isPresent())
             throw new NotFoundException("Error PatientService : Patient with ID : " + patient.getId() + " doesn't exist.");
+
 
         p.get().setFirstName(patient.getFirstName());
         p.get().setLastName(patient.getLastName());

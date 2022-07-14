@@ -71,6 +71,4 @@ public class DentistController {
             return ResponseEntity.notFound().build();
         }
     }
-
-
 }
