@@ -18,8 +18,6 @@ import java.time.LocalDate;
 class AppointmentIntegrationTest {
     @Autowired
     private MockMvc mockMvc;
-
-
     @Test
     void createNewDentistNewPatientAndNewAppointmentAndThenGetTheResults() throws Exception {
         String jsonPost = "{\n" +

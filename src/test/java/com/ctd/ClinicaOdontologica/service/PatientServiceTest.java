@@ -14,6 +14,9 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Optional;
 
 import static org.mockito.Mockito.*;
@@ -32,10 +35,10 @@ class PatientServiceTest {
     @Test
     void addPatient() throws BadRequestException {
         Residence residence = new Residence();
-        PatientDTO patient = new PatientDTO(10L,"fer", "fraga", "102369",  residence);
+        PatientDTO patient = new PatientDTO(10L,"fer", "fraga", "102369",  residence, LocalDate.now());
         Assertions.assertDoesNotThrow(() -> patientService.add(patient));
 
-        PatientDTO failPatient = new PatientDTO(10L,"", "fraga", "102369",  residence);
+        PatientDTO failPatient = new PatientDTO(10L,"", "fraga", "102369",  residence, LocalDate.now());
         Assertions.assertThrows(BadRequestException.class, () -> patientService.add(failPatient));
 
 
@@ -44,7 +47,7 @@ class PatientServiceTest {
     @Test
     void findById() throws NotFoundException {
         Residence residence = new Residence();
-        Patient patient = new Patient(10L, "salva", "diaz", residence, "1234");
+        Patient patient = new Patient(10L, "salva", "diaz", residence, "1234", LocalDate.now() );
         when(patientRepository.findById(any(Long.class))).thenReturn(Optional.of(patient));
 
         PatientDTO respuesta = Assertions.assertDoesNotThrow( () -> patientService.findById(10L));
