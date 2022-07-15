@@ -35,7 +35,7 @@ public class AppointmentService implements IService<AppointmentDTO> {
 
         Patient patient = patientService.DTO2entity(p);
         Dentist dentist = dentistService.DTO2entity(d);
-        Appointment a = new Appointment(appointment.getId(), appointment.getDateTime(), dentist, patient);
+        Appointment a = DTO2entity(appointment);
 
         appointmentRepository.save(a);
         logger.info("New appointment added.\n Dentist: Dr."+ dentist.getLastName() +"\n Patient:" + patient.getLastName() + "\n DateTime: " + a.getDateTime().toString());
@@ -49,14 +49,11 @@ public class AppointmentService implements IService<AppointmentDTO> {
         //Lo busco
         try{
             PatientDTO p = patientService.findById(appointment.getPatientId());
-            dentistService.findById(appointment.getDentistId());
-
-            patientService.update( p );
-
             DentistDTO d = dentistService.findById(appointment.getDentistId());
-
+            
             a.setDentist(dentistService.DTO2entity(d));
             a.setPatient(patientService.DTO2entity(p));
+            a.setDateTime( appointment.getDateTime() );
 
             logger.info("Appointment updated.\n Dentist: Dr."+ d.getLastName() +"\n Patient:" + p.getLastName() + "\n DateTime: " + a.getDateTime().toString());
             appointmentRepository.save(a);

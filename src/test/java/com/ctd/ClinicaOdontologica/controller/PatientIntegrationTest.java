@@ -40,14 +40,14 @@ public class PatientIntegrationTest {
     @Test
     void test02AddNewPatientWithAnExistingResidence() throws Exception {
         String jsonPost = "{\n"
-                + "\"firstName\" : \"Paciente\",\n"
-                + "\"lastName\" : \"Test\",\n"
-                + "\"DNI\" : \"42142342\",\n"
-                + "\"registrationDate\" : \"2022-02-01\",\n"
-                + "\"home\" : {\n"
-                + "\"id\" : 1,\n"
-                + "}\n"
-                + "}";
+                            + "\"firstName\" : \"Paciente\",\n"
+                            + "\"lastName\" : \"Test\",\n"
+                            + "\"DNI\" : \"42142342\",\n"
+                            + "\"registrationDate\" : \"2022-02-01\",\n"
+                            + "\"home\" : {\n"
+                                    + "\"id\" : 1\n"
+                            + "}\n"
+                         + "}";
 
         this.mockMvc.perform(MockMvcRequestBuilders.post("/patient")
                         .contentType(MediaType.APPLICATION_JSON).content(jsonPost))
@@ -60,7 +60,7 @@ public class PatientIntegrationTest {
         Assertions.assertFalse(response.getResponse().getContentAsString().isEmpty());
         String patient1 = response.getResponse().getContentAsString();
 
-        response = this.mockMvc.perform(MockMvcRequestBuilders.get("/patient/")
+        response = this.mockMvc.perform(MockMvcRequestBuilders.get("/patient/2")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andDo(MockMvcResultHandlers.print()).andReturn();
 
@@ -156,7 +156,7 @@ public class PatientIntegrationTest {
         Assertions.assertEquals(esperado, patient1);
 
         esperado = "{\"id\":3,\"firstName\":\"Paciente\",\"lastName\":\"Test\","
-                + "\"home\":{\"id\":1,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\","
+                + "\"home\":{\"id\":2,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\","
                 + "\"province\":\"Provincia\"},\"registrationDate\":\"2022-02-01\",\"dni\":\"42142342\""
                 + "}";
         Assertions.assertEquals(esperado, patient3);
@@ -168,7 +168,11 @@ public class PatientIntegrationTest {
                 "    \"id\" : 1,\n" +
                 "    \"firstName\" : \"Paciente\",\n" +
                 "    \"lastName\" : \"Test\",\n" +
-                "    \"registration\" : 1\n" +
+                "    \"dni\" : \"123456789\",\n" +
+                "    \"registrationDate\" : 1\n" +
+                "    \"home\" : {\n" +
+                "       \"id\" : 1\n" +
+                "    }\n" +
                 "}";
 
         this.mockMvc.perform(MockMvcRequestBuilders.post("/patient/")
@@ -189,10 +193,10 @@ public class PatientIntegrationTest {
         Assertions.assertFalse(response.getResponse().getContentAsString().isEmpty());
         String patient3 = response.getResponse().getContentAsString();
 
-        String esperado = "{\"id\":1,\"firstName\":\"Paciente\",\"lastName\":\"Test\",\"registration\":1}";
+        String esperado = "{\"id\":1,\"firstName\":\"Paciente\",\"lastName\":\"Test\",\"home\":{\"id\":1,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\",\"province\":\"Provincia\"},\"registrationDate\":\"2022-02-01\",\"dni\":\"42142342\"}";
         Assertions.assertEquals(esperado, patient1);
 
-        esperado = "{\"id\":3,\"firstName\":\"Paciente\",\"lastName\":\"Test\",\"registration\":0}";
+        esperado = "{\"id\":3,\"firstName\":\"Paciente\",\"lastName\":\"Test\",\"home\":{\"id\":2,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\",\"province\":\"Provincia\"},\"registrationDate\":\"2022-02-01\",\"dni\":\"42142342\"}";
         Assertions.assertEquals(esperado, patient3);
     }
 
@@ -214,24 +218,6 @@ public class PatientIntegrationTest {
                         .contentType(MediaType.APPLICATION_JSON).content(jsonPost))
                 .andDo(MockMvcResultHandlers.print()).andReturn();
     }
-    
-    /*
-    "id" = 1;
-    "firstName" = "Paciente",
-    "lastName" = "Test",
-    "DNI" = "42142342",
-    "registrationDate" = "2022-02-01",
-    "home" = {
-        "id" = ;
-        "street" = "Calle";
-        "number" = 123;
-        "location" = "Localidad";
-        "province" = "Provincia";
-    },
-    
-    
-    
-     */
-    
+
     
 }

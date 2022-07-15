@@ -60,6 +60,17 @@ public class PatientService implements IService<PatientDTO> {
         if (!p.isPresent())
             throw new NotFoundException("Error PatientService : Patient with ID : " + patient.getId() + " doesn't exist.");
 
+        if( p.get().getHomeId() == null ){
+            residenceService.add(p.get().getHome());
+        }else{
+            Residence r = null;
+            try {
+                r = residenceService.findById(p.get().getHomeId());
+                p.get().setHome(r);
+            } catch (NotFoundException e) {
+                throw new BadRequestException("Error PatientService: Residence entered doesn't exist.");
+            }
+        }
 
         p.get().setFirstName(patient.getFirstName());
         p.get().setLastName(patient.getLastName());

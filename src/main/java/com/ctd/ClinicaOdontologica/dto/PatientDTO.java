@@ -21,7 +21,6 @@ public class PatientDTO {
     private String lastName;
     private String DNI;
     private Residence home;
-
     @JsonFormat(pattern="yyyy-MM-dd")
     private LocalDate registrationDate;
 

@@ -27,12 +27,12 @@ public class Patient {
     private String lastName;
     @Column
     private String DNI;
+    @OneToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "home_id")
+    private Residence home;
     @Column
     @JsonFormat(pattern="yyyy-MM-dd")
     private LocalDate registrationDate;
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "home_id")
-    private Residence home;
 
     @OneToMany(mappedBy = "patient", fetch = FetchType.LAZY)
     @JsonIgnore
