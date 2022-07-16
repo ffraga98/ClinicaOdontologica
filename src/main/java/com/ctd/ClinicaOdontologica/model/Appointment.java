@@ -1,5 +1,6 @@
 package com.ctd.ClinicaOdontologica.model;
 
+import com.ctd.ClinicaOdontologica.dto.AppointmentDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -30,4 +31,10 @@ public class Appointment {
     @JoinColumn(name = "patient_id")
     private Patient patient;
 
+    public Appointment( AppointmentDTO a ){
+        this.id = a.getId();
+        this.dentist = a.getDentist();
+        this.patient = a.getPatient();
+        this.dateTime = a.getDateTime();
+    }
 }

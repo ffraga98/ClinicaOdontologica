@@ -1,9 +1,11 @@
 package com.ctd.ClinicaOdontologica.dto;
 
 import com.ctd.ClinicaOdontologica.model.Appointment;
+import com.ctd.ClinicaOdontologica.model.Patient;
 import com.ctd.ClinicaOdontologica.model.Residence;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,6 +17,7 @@ import java.util.Set;
 
 @Getter
 @Setter
+@AllArgsConstructor
 public class PatientDTO {
     private Long id;
     private String firstName;
@@ -24,19 +27,21 @@ public class PatientDTO {
     @JsonFormat(pattern="yyyy-MM-dd")
     private LocalDate registrationDate;
 
-
-    public PatientDTO(Long id, String firstName, String lastName, String DNI, Residence home, LocalDate date) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.DNI = DNI;
-        this.home = home;
-        this.registrationDate = date;
+    public PatientDTO( Patient p) {
+        this.id = p.getId();
+        this.firstName = p.getFirstName();
+        this.lastName = p.getLastName();
+        this.home = p.getHome();
+        this.DNI = p.getDNI();
+        this.registrationDate = p.getRegistrationDate();
     }
 
     @JsonIgnore
     public boolean isInvalid() {
-        return (this == null || firstName.isEmpty() || lastName.isEmpty() || DNI.isEmpty());
+        boolean result = (firstName == null || lastName == null || DNI == null || registrationDate == null);
+        if ( !result)
+            result = (DNI.isEmpty() || firstName.isEmpty() || lastName.isEmpty());
+        return result;
     }
 
 }

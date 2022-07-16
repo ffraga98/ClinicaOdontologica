@@ -21,14 +21,14 @@ public class ResidenceService implements IService<Residence> {
     public static Logger logger = Logger.getLogger(ResidenceService.class);
 
     @Override
-    public void add(Residence residence) throws BadRequestException {
+    public Residence add(Residence residence) throws BadRequestException {
         if( residence.isInvalid() ) throw new BadRequestException("Error ResidenceService: Wrong input values");
         logger.info("New residence added.");
-        residenceRepository.save(residence);
+        return residenceRepository.save(residence);
     }
 
     @Override
-    public void update(Residence r) throws NotFoundException {
+    public Residence update(Residence r) throws NotFoundException {
         Residence residence = this.findById(r.getId());
 
         residence.setStreet(r.getStreet());
@@ -37,7 +37,7 @@ public class ResidenceService implements IService<Residence> {
         residence.setProvince(r.getProvince());
 
         logger.info("Residence id: " + r.getId() + " updated.");
-        residenceRepository.save(residence);
+        return residenceRepository.save(residence);
     }
 
     @Override

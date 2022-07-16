@@ -22,40 +22,37 @@ public class DentistService implements IService<DentistDTO> {
     public static Logger logger = Logger.getLogger(DentistService.class);
 
     @Override
-    public void add(DentistDTO dentist) throws BadRequestException {
+    public DentistDTO add(DentistDTO dentist) throws BadRequestException {
         if (dentist.isInvalid()) {
             throw new BadRequestException("Error DentistService: Wrong input values");
         }
 
-        Dentist d = DTO2entity(dentist);
-        dentistRepository.save(d);
+        Dentist d = new Dentist(dentist);
 
         logger.info("Dentist with Registration : " + d.getRegistration() + " added.");
 
+        return new DentistDTO( dentistRepository.save(d) );
     }
 
     @Override
-    public void update(DentistDTO dentist) throws BadRequestException, NotFoundException {
-        if (dentist.isInvalid()) {
+    public DentistDTO update(DentistDTO d) throws BadRequestException, NotFoundException {
+        if (d.isInvalid()) {
             throw new BadRequestException("Error DentistService: Wrong input values");
         }
+        DentistDTO dentist = this.findById(d.getId());
 
-        Optional<Dentist> d = dentistRepository.findById(dentist.getId());
-        if (!d.isPresent())
-            throw new NotFoundException("Error DentistService : Dentist with ID : " + dentist.getId() + " doesn't exist.");
+        dentist.setFirstName( d.getFirstName() );
+        dentist.setLastName( d.getLastName() );
+        dentist.setRegistration( d.getRegistration() );
 
-        d.get().setFirstName(dentist.getFirstName());
-        d.get().setLastName(dentist.getLastName());
-        d.get().setRegistration(dentist.getRegistration());
+        dentistRepository.save(new Dentist( dentist ));
+        logger.info("Dentist with Registration : " + dentist.getRegistration() + " updated.");
 
-        dentistRepository.save(d.get());
-        logger.info("Dentist with Registration : " + d.get().getRegistration() + "updated.");
-
+        return dentist;
     }
 
     @Override
     public void delete(Long id) throws NotFoundException {
-        //TODO: Agregar logger.
         DentistDTO d = this.findById(id);
         dentistRepository.deleteById(id);
         logger.info("Dentist with ID:" + id + "deleted.");
@@ -66,7 +63,7 @@ public class DentistService implements IService<DentistDTO> {
         List<Dentist> dentists = dentistRepository.findAll();
         Set<DentistDTO> set = new HashSet<>();
         for (Dentist dentist : dentists) {
-            set.add(entity2DTO(dentist));
+            set.add(new DentistDTO(dentist));
         }
 
         logger.info("All dentists were listed.");
@@ -79,14 +76,6 @@ public class DentistService implements IService<DentistDTO> {
         if (!d.isPresent())
             throw new NotFoundException("Error DentistService : Dentist with ID : " + id + " doesn't exist.");
 
-        return entity2DTO(d.get());
-    }
-
-    public DentistDTO entity2DTO(Dentist d) {
-        return new DentistDTO(d.getId(), d.getFirstName(), d.getLastName(), d.getRegistration());
-    }
-
-    public Dentist DTO2entity(DentistDTO dto) {
-        return new Dentist(dto.getId(), dto.getFirstName(), dto.getLastName(), dto.getRegistration());
+        return new DentistDTO(d.get());
     }
 }

@@ -27,12 +27,12 @@ public class PatientService implements IService<PatientDTO> {
     public static Logger logger = Logger.getLogger(PatientService.class);
 
     @Override
-    public void add(PatientDTO patient) throws BadRequestException {
+    public PatientDTO add(PatientDTO patient) throws BadRequestException {
         if (patient.isInvalid()) {
             throw new BadRequestException("Error PatientService: Wrong input values");
         }
 
-        Patient p = DTO2entity(patient);
+        Patient p = new Patient(patient);
         if( p.getHomeId() == null ){
             residenceService.add(p.getHome());
         }else{
@@ -45,13 +45,13 @@ public class PatientService implements IService<PatientDTO> {
             }
         }
 
-        patientRepository.save(p);
         logger.info("Patient with DNI : " + p.getDNI() + "added.");
+        return new PatientDTO( patientRepository.save(p) );
 
     }
 
     @Override
-    public void update(PatientDTO patient) throws BadRequestException, NotFoundException {
+    public PatientDTO update(PatientDTO patient) throws BadRequestException, NotFoundException {
         if (patient.isInvalid()) {
             throw new BadRequestException("Error PatientService: Wrong input values");
         }
@@ -77,8 +77,8 @@ public class PatientService implements IService<PatientDTO> {
         p.get().setHome(patient.getHome());
         p.get().setDNI(patient.getDNI());
 
-        patientRepository.save(p.get());
         logger.info("Patient with ID : " + p.get().getId() + "updated.");
+        return new PatientDTO( patientRepository.save(p.get()) );
     }
 
     @Override
@@ -95,7 +95,7 @@ public class PatientService implements IService<PatientDTO> {
         Set<PatientDTO> set = new HashSet<>();
 
         for (Patient patient : patients) {
-            set.add(entity2DTO(patient));
+            set.add(new PatientDTO(patient));
         }
         return set;
     }
@@ -106,14 +106,6 @@ public class PatientService implements IService<PatientDTO> {
         if (!p.isPresent())
             throw new NotFoundException("Error PatientService : Patient with ID : " + id + " doesn't exist.");
 
-        return entity2DTO(p.get());
-    }
-
-    public PatientDTO entity2DTO(Patient patient) {
-        return new PatientDTO(patient.getId(), patient.getFirstName(), patient.getLastName(), patient.getDNI(), patient.getHome(), patient.getRegistrationDate());
-    }
-
-    public Patient DTO2entity(PatientDTO dto) {
-        return new Patient(dto.getId(), dto.getFirstName(), dto.getLastName(), dto.getHome(), dto.getDNI(), dto.getRegistrationDate());
+        return new PatientDTO(p.get());
     }
 }

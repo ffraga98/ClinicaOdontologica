@@ -6,9 +6,9 @@ import com.ctd.ClinicaOdontologica.exceptions.NotFoundException;
 import java.util.Set;
 
 public interface IService<T> {
-    void add(T element) throws BadRequestException, NotFoundException;
+    T add(T element) throws BadRequestException, NotFoundException;
 
-    void update(T element) throws BadRequestException, NotFoundException;
+    T update(T element) throws BadRequestException, NotFoundException;
 
     void delete(Long id) throws NotFoundException;
 

@@ -38,21 +38,6 @@ public class Patient {
     @JsonIgnore
     private Set<Appointment> appointments = new HashSet<>();
 
-    @JsonIgnore
-    public boolean isInvalid() {
-        boolean result = false;
-
-        if (this == null) {
-            result = true;
-        } else if (firstName == null || lastName == null || DNI == null) {
-            result = true;
-        } else if (DNI.isEmpty() || firstName.isEmpty() || lastName.isEmpty()) {
-            result = true;
-        }
-
-        return result;
-    }
-
     public Patient(Long id, String firstName, String lastName, Residence home, String DNI, LocalDate date) {
         this.id = id;
         this.firstName = firstName;
@@ -62,6 +47,14 @@ public class Patient {
         this.registrationDate = date;
     }
 
+    public Patient( PatientDTO p) {
+        this.id = p.getId();
+        this.firstName = p.getFirstName();
+        this.lastName = p.getLastName();
+        this.home = p.getHome();
+        this.DNI = p.getDNI();
+        this.registrationDate = p.getRegistrationDate();
+    }
     @JsonIgnore
     public Long getHomeId() {
         return home.getId();

@@ -1443,3 +1443,502 @@
 2022-07-15 16:10:53 INFO  AppointmentService:69 - Appointment deleted.
 2022-07-15 16:10:53 INFO  AppointmentController:53 - Appointment deleted.
 2022-07-15 16:10:53 INFO  PatientService:49 - Patient with DNI : 102369added.
+2022-07-15 16:15:24 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:15:24 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:15:24 INFO  DentistService:72 - All dentists were listed.
+2022-07-15 16:15:24 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:15:24 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:15:24 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:15:24 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:15:24 INFO  DentistService:61 - Dentist with ID:2deleted.
+2022-07-15 16:15:24 INFO  DentistController:52 - Dentist deleted.
+2022-07-15 16:15:25 INFO  DentistService:33 - Dentist with Registration : 1 added.
+2022-07-15 16:15:25 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:15:25 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:15:25 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:15:25 INFO  PatientController:25 - Patient added.
+2022-07-15 16:15:25 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:15:25 INFO  PatientController:25 - Patient added.
+2022-07-15 16:15:25 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:15:25 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:15:25 INFO  PatientController:25 - Patient added.
+2022-07-15 16:15:25 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:15:25 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:15:25 INFO  PatientController:25 - Patient added.
+2022-07-15 16:15:25 INFO  PatientService:87 - Patient with ID:2deleted.
+2022-07-15 16:15:25 INFO  PatientController:50 - Patient deleted.
+2022-07-15 16:15:25 INFO  DentistService:33 - Dentist with Registration : 1 added.
+2022-07-15 16:15:25 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:15:25 INFO  DentistService:33 - Dentist with Registration : 2 added.
+2022-07-15 16:15:25 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:15:25 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:15:25 INFO  PatientService:49 - Patient with DNI : 1111111added.
+2022-07-15 16:15:25 INFO  PatientController:25 - Patient added.
+2022-07-15 16:15:25 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:15:25 INFO  PatientService:49 - Patient with DNI : 222222added.
+2022-07-15 16:15:25 INFO  PatientController:25 - Patient added.
+2022-07-15 16:15:25 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:15:25 INFO  PatientService:49 - Patient with DNI : 333333added.
+2022-07-15 16:15:25 INFO  PatientController:25 - Patient added.
+2022-07-15 16:15:25 INFO  AppointmentService:41 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 16:15:25 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 16:15:25 INFO  AppointmentService:41 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 16:15:25 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 16:15:25 INFO  AppointmentService:58 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-20T13:30
+2022-07-15 16:15:25 INFO  AppointmentController:65 - Appointment updated.
+2022-07-15 16:15:25 INFO  AppointmentService:69 - Appointment deleted.
+2022-07-15 16:15:25 INFO  AppointmentController:53 - Appointment deleted.
+2022-07-15 16:15:25 INFO  PatientService:49 - Patient with DNI : 102369added.
+2022-07-15 16:15:39 INFO  PatientService:49 - Patient with DNI : 102369added.
+2022-07-15 16:16:56 INFO  PatientService:49 - Patient with DNI : 102369added.
+2022-07-15 16:19:48 INFO  PatientService:49 - Patient with DNI : testadded.
+2022-07-15 16:28:13 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:28:13 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:28:13 INFO  DentistService:72 - All dentists were listed.
+2022-07-15 16:28:14 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:28:14 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:28:14 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:28:14 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:28:14 INFO  DentistService:61 - Dentist with ID:2deleted.
+2022-07-15 16:28:14 INFO  DentistController:52 - Dentist deleted.
+2022-07-15 16:28:14 INFO  DentistService:33 - Dentist with Registration : 1 added.
+2022-07-15 16:28:14 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:28:14 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:28:14 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:28:14 INFO  PatientController:25 - Patient added.
+2022-07-15 16:28:14 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:28:14 INFO  PatientController:25 - Patient added.
+2022-07-15 16:28:14 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:28:14 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:28:14 INFO  PatientController:25 - Patient added.
+2022-07-15 16:28:14 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:28:14 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:28:14 INFO  PatientController:25 - Patient added.
+2022-07-15 16:28:14 INFO  PatientService:87 - Patient with ID:2deleted.
+2022-07-15 16:28:14 INFO  PatientController:50 - Patient deleted.
+2022-07-15 16:28:14 INFO  DentistService:33 - Dentist with Registration : 1 added.
+2022-07-15 16:28:14 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:28:14 INFO  DentistService:33 - Dentist with Registration : 2 added.
+2022-07-15 16:28:14 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:28:14 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:28:14 INFO  PatientService:49 - Patient with DNI : 1111111added.
+2022-07-15 16:28:14 INFO  PatientController:25 - Patient added.
+2022-07-15 16:28:14 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:28:14 INFO  PatientService:49 - Patient with DNI : 222222added.
+2022-07-15 16:28:14 INFO  PatientController:25 - Patient added.
+2022-07-15 16:28:14 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:28:14 INFO  PatientService:49 - Patient with DNI : 333333added.
+2022-07-15 16:28:14 INFO  PatientController:25 - Patient added.
+2022-07-15 16:28:14 INFO  AppointmentService:41 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 16:28:14 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 16:28:14 INFO  AppointmentService:41 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 16:28:14 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 16:28:14 INFO  AppointmentService:58 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-20T13:30
+2022-07-15 16:28:14 INFO  AppointmentController:65 - Appointment updated.
+2022-07-15 16:28:14 INFO  AppointmentService:69 - Appointment deleted.
+2022-07-15 16:28:14 INFO  AppointmentController:53 - Appointment deleted.
+2022-07-15 16:28:15 INFO  PatientService:49 - Patient with DNI : testadded.
+2022-07-15 16:30:47 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:30:47 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:30:47 INFO  DentistService:72 - All dentists were listed.
+2022-07-15 16:30:47 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:30:47 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:30:47 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:30:47 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:30:47 INFO  DentistService:61 - Dentist with ID:2deleted.
+2022-07-15 16:30:47 INFO  DentistController:52 - Dentist deleted.
+2022-07-15 16:30:47 INFO  DentistService:33 - Dentist with Registration : 1 added.
+2022-07-15 16:30:47 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:30:47 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:30:47 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:30:47 INFO  PatientController:25 - Patient added.
+2022-07-15 16:30:47 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:30:47 INFO  PatientController:25 - Patient added.
+2022-07-15 16:30:47 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:30:47 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:30:47 INFO  PatientController:25 - Patient added.
+2022-07-15 16:30:47 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:30:47 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:30:47 INFO  PatientController:25 - Patient added.
+2022-07-15 16:30:47 INFO  PatientService:87 - Patient with ID:2deleted.
+2022-07-15 16:30:47 INFO  PatientController:50 - Patient deleted.
+2022-07-15 16:30:47 INFO  DentistService:33 - Dentist with Registration : 1 added.
+2022-07-15 16:30:47 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:30:47 INFO  DentistService:33 - Dentist with Registration : 2 added.
+2022-07-15 16:30:47 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:30:47 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:30:47 INFO  PatientService:49 - Patient with DNI : 1111111added.
+2022-07-15 16:30:47 INFO  PatientController:25 - Patient added.
+2022-07-15 16:30:47 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:30:47 INFO  PatientService:49 - Patient with DNI : 222222added.
+2022-07-15 16:30:47 INFO  PatientController:25 - Patient added.
+2022-07-15 16:30:47 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:30:47 INFO  PatientService:49 - Patient with DNI : 333333added.
+2022-07-15 16:30:47 INFO  PatientController:25 - Patient added.
+2022-07-15 16:30:47 INFO  AppointmentService:41 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 16:30:47 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 16:30:47 INFO  AppointmentService:41 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 16:30:47 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 16:30:47 INFO  AppointmentService:58 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-20T13:30
+2022-07-15 16:30:47 INFO  AppointmentController:65 - Appointment updated.
+2022-07-15 16:30:48 INFO  AppointmentService:69 - Appointment deleted.
+2022-07-15 16:30:48 INFO  AppointmentController:53 - Appointment deleted.
+2022-07-15 16:30:48 INFO  PatientService:49 - Patient with DNI : testadded.
+2022-07-15 16:33:27 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:33:27 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:33:27 INFO  DentistService:72 - All dentists were listed.
+2022-07-15 16:33:27 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:33:27 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:33:27 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:33:27 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:33:27 INFO  DentistService:61 - Dentist with ID:2deleted.
+2022-07-15 16:33:27 INFO  DentistController:52 - Dentist deleted.
+2022-07-15 16:33:28 INFO  DentistService:33 - Dentist with Registration : 1 added.
+2022-07-15 16:33:28 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:33:28 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:33:28 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:33:28 INFO  PatientController:25 - Patient added.
+2022-07-15 16:33:28 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:33:28 INFO  PatientController:25 - Patient added.
+2022-07-15 16:33:28 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:33:28 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:33:28 INFO  PatientController:25 - Patient added.
+2022-07-15 16:33:28 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:33:28 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:33:28 INFO  PatientController:25 - Patient added.
+2022-07-15 16:33:28 INFO  PatientService:87 - Patient with ID:2deleted.
+2022-07-15 16:33:28 INFO  PatientController:50 - Patient deleted.
+2022-07-15 16:33:28 INFO  DentistService:33 - Dentist with Registration : 1 added.
+2022-07-15 16:33:28 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:33:28 INFO  DentistService:33 - Dentist with Registration : 2 added.
+2022-07-15 16:33:28 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:33:28 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:33:28 INFO  PatientService:49 - Patient with DNI : 1111111added.
+2022-07-15 16:33:28 INFO  PatientController:25 - Patient added.
+2022-07-15 16:33:28 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:33:28 INFO  PatientService:49 - Patient with DNI : 222222added.
+2022-07-15 16:33:28 INFO  PatientController:25 - Patient added.
+2022-07-15 16:33:28 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:33:28 INFO  PatientService:49 - Patient with DNI : 333333added.
+2022-07-15 16:33:28 INFO  PatientController:25 - Patient added.
+2022-07-15 16:33:28 INFO  AppointmentService:41 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 16:33:28 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 16:33:28 INFO  AppointmentService:41 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 16:33:28 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 16:33:28 INFO  AppointmentService:58 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-20T13:30
+2022-07-15 16:33:28 INFO  AppointmentController:65 - Appointment updated.
+2022-07-15 16:33:28 INFO  AppointmentService:69 - Appointment deleted.
+2022-07-15 16:33:28 INFO  AppointmentController:53 - Appointment deleted.
+2022-07-15 16:33:28 INFO  PatientService:49 - Patient with DNI : testadded.
+2022-07-15 16:33:28 INFO  PatientService:49 - Patient with DNI : testadded.
+2022-07-15 16:34:49 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:34:49 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:34:49 INFO  DentistService:72 - All dentists were listed.
+2022-07-15 16:34:50 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:34:50 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:34:50 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:34:50 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:34:50 INFO  DentistService:61 - Dentist with ID:2deleted.
+2022-07-15 16:34:50 INFO  DentistController:52 - Dentist deleted.
+2022-07-15 16:34:50 INFO  DentistService:33 - Dentist with Registration : 1 added.
+2022-07-15 16:34:50 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:34:50 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:34:50 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:34:50 INFO  PatientController:25 - Patient added.
+2022-07-15 16:34:50 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:34:50 INFO  PatientController:25 - Patient added.
+2022-07-15 16:34:50 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:34:50 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:34:50 INFO  PatientController:25 - Patient added.
+2022-07-15 16:34:50 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:34:50 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:34:50 INFO  PatientController:25 - Patient added.
+2022-07-15 16:34:50 INFO  PatientService:87 - Patient with ID:2deleted.
+2022-07-15 16:34:50 INFO  PatientController:50 - Patient deleted.
+2022-07-15 16:34:50 INFO  DentistService:33 - Dentist with Registration : 1 added.
+2022-07-15 16:34:50 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:34:50 INFO  DentistService:33 - Dentist with Registration : 2 added.
+2022-07-15 16:34:50 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:34:50 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:34:50 INFO  PatientService:49 - Patient with DNI : 1111111added.
+2022-07-15 16:34:50 INFO  PatientController:25 - Patient added.
+2022-07-15 16:34:50 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:34:50 INFO  PatientService:49 - Patient with DNI : 222222added.
+2022-07-15 16:34:50 INFO  PatientController:25 - Patient added.
+2022-07-15 16:34:50 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:34:50 INFO  PatientService:49 - Patient with DNI : 333333added.
+2022-07-15 16:34:50 INFO  PatientController:25 - Patient added.
+2022-07-15 16:34:50 INFO  AppointmentService:41 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 16:34:50 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 16:34:50 INFO  AppointmentService:41 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 16:34:50 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 16:34:50 INFO  AppointmentService:58 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-20T13:30
+2022-07-15 16:34:50 INFO  AppointmentController:65 - Appointment updated.
+2022-07-15 16:34:50 INFO  AppointmentService:69 - Appointment deleted.
+2022-07-15 16:34:50 INFO  AppointmentController:53 - Appointment deleted.
+2022-07-15 16:34:51 INFO  PatientService:49 - Patient with DNI : testadded.
+2022-07-15 16:57:35 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:57:35 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:57:35 INFO  DentistService:72 - All dentists were listed.
+2022-07-15 16:57:35 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:57:35 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:57:35 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 16:57:35 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:57:35 INFO  DentistService:61 - Dentist with ID:2deleted.
+2022-07-15 16:57:35 INFO  DentistController:52 - Dentist deleted.
+2022-07-15 16:57:36 INFO  DentistService:33 - Dentist with Registration : 1 added.
+2022-07-15 16:57:36 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:57:36 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:57:36 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:57:36 INFO  PatientController:25 - Patient added.
+2022-07-15 16:57:36 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:57:36 INFO  PatientController:25 - Patient added.
+2022-07-15 16:57:36 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:57:36 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:57:36 INFO  PatientController:25 - Patient added.
+2022-07-15 16:57:36 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:57:36 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 16:57:36 INFO  PatientController:25 - Patient added.
+2022-07-15 16:57:36 INFO  PatientService:87 - Patient with ID:2deleted.
+2022-07-15 16:57:36 INFO  PatientController:50 - Patient deleted.
+2022-07-15 16:57:36 INFO  DentistService:33 - Dentist with Registration : 1 added.
+2022-07-15 16:57:36 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:57:36 INFO  DentistService:33 - Dentist with Registration : 2 added.
+2022-07-15 16:57:36 INFO  DentistController:25 - Dentist added.
+2022-07-15 16:57:36 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:57:36 INFO  PatientService:49 - Patient with DNI : 1111111added.
+2022-07-15 16:57:36 INFO  PatientController:25 - Patient added.
+2022-07-15 16:57:36 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:57:36 INFO  PatientService:49 - Patient with DNI : 222222added.
+2022-07-15 16:57:36 INFO  PatientController:25 - Patient added.
+2022-07-15 16:57:36 INFO  ResidenceService:26 - New residence added.
+2022-07-15 16:57:36 INFO  PatientService:49 - Patient with DNI : 333333added.
+2022-07-15 16:57:36 INFO  PatientController:25 - Patient added.
+2022-07-15 16:57:36 INFO  AppointmentService:41 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 16:57:36 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 16:57:36 INFO  AppointmentService:41 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 16:57:36 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 16:57:36 INFO  AppointmentService:58 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-20T13:30
+2022-07-15 16:57:36 INFO  AppointmentController:65 - Appointment updated.
+2022-07-15 16:57:36 INFO  AppointmentService:69 - Appointment deleted.
+2022-07-15 16:57:36 INFO  AppointmentController:53 - Appointment deleted.
+2022-07-15 16:57:37 INFO  PatientService:49 - Patient with DNI : testadded.
+2022-07-15 20:06:29 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 20:06:29 INFO  DentistController:25 - Dentist added.
+2022-07-15 20:06:29 INFO  DentistService:72 - All dentists were listed.
+2022-07-15 20:06:30 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 20:06:30 INFO  DentistController:25 - Dentist added.
+2022-07-15 20:06:30 INFO  DentistService:33 - Dentist with Registration : 0 added.
+2022-07-15 20:06:30 INFO  DentistController:25 - Dentist added.
+2022-07-15 20:06:30 INFO  DentistService:61 - Dentist with ID:2deleted.
+2022-07-15 20:06:30 INFO  DentistController:52 - Dentist deleted.
+2022-07-15 20:06:30 INFO  DentistService:33 - Dentist with Registration : 1 added.
+2022-07-15 20:06:30 INFO  DentistController:25 - Dentist added.
+2022-07-15 20:06:30 INFO  ResidenceService:26 - New residence added.
+2022-07-15 20:06:30 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 20:06:30 INFO  PatientController:25 - Patient added.
+2022-07-15 20:06:30 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 20:06:30 INFO  PatientController:25 - Patient added.
+2022-07-15 20:06:30 INFO  ResidenceService:26 - New residence added.
+2022-07-15 20:06:30 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 20:06:30 INFO  PatientController:25 - Patient added.
+2022-07-15 20:06:30 INFO  ResidenceService:26 - New residence added.
+2022-07-15 20:06:30 INFO  PatientService:49 - Patient with DNI : 42142342added.
+2022-07-15 20:06:30 INFO  PatientController:25 - Patient added.
+2022-07-15 20:06:30 INFO  PatientService:87 - Patient with ID:2deleted.
+2022-07-15 20:06:30 INFO  PatientController:50 - Patient deleted.
+2022-07-15 20:06:30 INFO  DentistService:33 - Dentist with Registration : 1 added.
+2022-07-15 20:06:30 INFO  DentistController:25 - Dentist added.
+2022-07-15 20:06:30 INFO  DentistService:33 - Dentist with Registration : 2 added.
+2022-07-15 20:06:30 INFO  DentistController:25 - Dentist added.
+2022-07-15 20:06:30 INFO  ResidenceService:26 - New residence added.
+2022-07-15 20:06:30 INFO  PatientService:49 - Patient with DNI : 1111111added.
+2022-07-15 20:06:30 INFO  PatientController:25 - Patient added.
+2022-07-15 20:06:30 INFO  ResidenceService:26 - New residence added.
+2022-07-15 20:06:30 INFO  PatientService:49 - Patient with DNI : 222222added.
+2022-07-15 20:06:30 INFO  PatientController:25 - Patient added.
+2022-07-15 20:06:30 INFO  ResidenceService:26 - New residence added.
+2022-07-15 20:06:30 INFO  PatientService:49 - Patient with DNI : 333333added.
+2022-07-15 20:06:30 INFO  PatientController:25 - Patient added.
+2022-07-15 20:06:30 INFO  AppointmentService:41 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 20:06:30 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 20:06:31 INFO  AppointmentService:41 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 20:06:31 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 20:06:31 INFO  AppointmentService:58 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-20T13:30
+2022-07-15 20:06:31 INFO  AppointmentController:65 - Appointment updated.
+2022-07-15 20:06:31 INFO  AppointmentService:69 - Appointment deleted.
+2022-07-15 20:06:31 INFO  AppointmentController:53 - Appointment deleted.
+2022-07-15 20:06:31 INFO  PatientService:49 - Patient with DNI : testadded.
+2022-07-15 21:16:35 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-07-15 21:16:35 INFO  DentistController:25 - Dentist added.
+2022-07-15 21:16:36 INFO  DentistService:69 - All dentists were listed.
+2022-07-15 21:16:36 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-07-15 21:16:36 INFO  DentistController:25 - Dentist added.
+2022-07-15 21:16:37 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-07-15 21:16:37 INFO  DentistController:25 - Dentist added.
+2022-07-15 21:16:37 INFO  DentistService:58 - Dentist with ID:2deleted.
+2022-07-15 21:16:37 INFO  DentistController:52 - Dentist deleted.
+2022-07-15 21:16:37 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-07-15 21:16:37 INFO  DentistController:25 - Dentist added.
+2022-07-15 21:16:37 INFO  ResidenceService:26 - New residence added.
+2022-07-15 21:16:37 INFO  PatientService:48 - Patient with DNI : 42142342added.
+2022-07-15 21:16:38 INFO  PatientController:25 - Patient added.
+2022-07-15 21:16:38 INFO  PatientService:48 - Patient with DNI : 42142342added.
+2022-07-15 21:16:38 INFO  PatientController:25 - Patient added.
+2022-07-15 21:16:38 INFO  ResidenceService:26 - New residence added.
+2022-07-15 21:16:38 INFO  PatientService:48 - Patient with DNI : 42142342added.
+2022-07-15 21:16:38 INFO  PatientController:25 - Patient added.
+2022-07-15 21:16:38 INFO  ResidenceService:26 - New residence added.
+2022-07-15 21:16:38 INFO  PatientService:48 - Patient with DNI : 42142342added.
+2022-07-15 21:16:38 INFO  PatientController:25 - Patient added.
+2022-07-15 21:16:38 INFO  PatientService:87 - Patient with ID:2deleted.
+2022-07-15 21:16:38 INFO  PatientController:50 - Patient deleted.
+2022-07-15 21:16:39 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-07-15 21:16:39 INFO  DentistController:25 - Dentist added.
+2022-07-15 21:16:39 INFO  DentistService:32 - Dentist with Registration : 2 added.
+2022-07-15 21:16:39 INFO  DentistController:25 - Dentist added.
+2022-07-15 21:16:39 INFO  ResidenceService:26 - New residence added.
+2022-07-15 21:16:39 INFO  PatientService:48 - Patient with DNI : 1111111added.
+2022-07-15 21:16:39 INFO  PatientController:25 - Patient added.
+2022-07-15 21:16:39 INFO  ResidenceService:26 - New residence added.
+2022-07-15 21:16:39 INFO  PatientService:48 - Patient with DNI : 222222added.
+2022-07-15 21:16:39 INFO  PatientController:25 - Patient added.
+2022-07-15 21:16:39 INFO  ResidenceService:26 - New residence added.
+2022-07-15 21:16:39 INFO  PatientService:48 - Patient with DNI : 333333added.
+2022-07-15 21:16:39 INFO  PatientController:25 - Patient added.
+2022-07-15 21:16:40 INFO  AppointmentService:40 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 21:16:40 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 21:16:40 INFO  AppointmentService:40 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 21:16:40 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 21:16:40 INFO  AppointmentService:58 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-20T13:30
+2022-07-15 21:16:40 INFO  AppointmentController:65 - Appointment updated.
+2022-07-15 21:16:40 INFO  AppointmentService:69 - Appointment deleted.
+2022-07-15 21:16:40 INFO  AppointmentController:53 - Appointment deleted.
+2022-07-15 21:16:42 INFO  PatientService:48 - Patient with DNI : testadded.
+2022-07-15 21:22:31 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-07-15 21:22:32 INFO  DentistController:25 - Dentist added.
+2022-07-15 21:22:32 INFO  DentistService:69 - All dentists were listed.
+2022-07-15 21:22:32 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-07-15 21:22:32 INFO  DentistController:25 - Dentist added.
+2022-07-15 21:22:32 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-07-15 21:22:32 INFO  DentistController:25 - Dentist added.
+2022-07-15 21:22:32 INFO  DentistService:58 - Dentist with ID:2deleted.
+2022-07-15 21:22:32 INFO  DentistController:52 - Dentist deleted.
+2022-07-15 21:22:32 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-07-15 21:22:32 INFO  DentistController:25 - Dentist added.
+2022-07-15 21:22:32 INFO  ResidenceService:26 - New residence added.
+2022-07-15 21:22:32 INFO  PatientService:48 - Patient with DNI : 42142342added.
+2022-07-15 21:22:32 INFO  PatientController:25 - Patient added.
+2022-07-15 21:22:32 INFO  PatientService:48 - Patient with DNI : 42142342added.
+2022-07-15 21:22:32 INFO  PatientController:25 - Patient added.
+2022-07-15 21:22:32 INFO  ResidenceService:26 - New residence added.
+2022-07-15 21:22:32 INFO  PatientService:48 - Patient with DNI : 42142342added.
+2022-07-15 21:22:32 INFO  PatientController:25 - Patient added.
+2022-07-15 21:22:33 INFO  ResidenceService:26 - New residence added.
+2022-07-15 21:22:33 INFO  PatientService:48 - Patient with DNI : 42142342added.
+2022-07-15 21:22:33 INFO  PatientController:25 - Patient added.
+2022-07-15 21:22:33 INFO  PatientService:87 - Patient with ID:2deleted.
+2022-07-15 21:22:33 INFO  PatientController:50 - Patient deleted.
+2022-07-15 21:22:33 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-07-15 21:22:33 INFO  DentistController:25 - Dentist added.
+2022-07-15 21:22:33 INFO  DentistService:32 - Dentist with Registration : 2 added.
+2022-07-15 21:22:33 INFO  DentistController:25 - Dentist added.
+2022-07-15 21:22:33 INFO  ResidenceService:26 - New residence added.
+2022-07-15 21:22:33 INFO  PatientService:48 - Patient with DNI : 1111111added.
+2022-07-15 21:22:33 INFO  PatientController:25 - Patient added.
+2022-07-15 21:22:33 INFO  ResidenceService:26 - New residence added.
+2022-07-15 21:22:33 INFO  PatientService:48 - Patient with DNI : 222222added.
+2022-07-15 21:22:33 INFO  PatientController:25 - Patient added.
+2022-07-15 21:22:33 INFO  ResidenceService:26 - New residence added.
+2022-07-15 21:22:33 INFO  PatientService:48 - Patient with DNI : 333333added.
+2022-07-15 21:22:33 INFO  PatientController:25 - Patient added.
+2022-07-15 21:22:33 INFO  AppointmentService:40 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 21:22:33 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 21:22:33 INFO  AppointmentService:40 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-15 21:22:33 INFO  AppointmentController:25 - Adding new appointment
+2022-07-15 21:22:34 INFO  AppointmentService:58 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-20T13:30
+2022-07-15 21:22:34 INFO  AppointmentController:65 - Appointment updated.
+2022-07-15 21:22:34 INFO  AppointmentService:69 - Appointment deleted.
+2022-07-15 21:22:34 INFO  AppointmentController:53 - Appointment deleted.
+2022-07-15 21:22:35 INFO  PatientService:48 - Patient with DNI : testadded.

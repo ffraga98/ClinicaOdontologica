@@ -1,5 +1,6 @@
 package com.ctd.ClinicaOdontologica.dto;
 
+import com.ctd.ClinicaOdontologica.model.Appointment;
 import com.ctd.ClinicaOdontologica.model.Dentist;
 import com.ctd.ClinicaOdontologica.model.Patient;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -26,6 +27,13 @@ public class AppointmentDTO {
     @JsonIgnore
     public Long getPatientId() {
         return patient.getId();
+    }
+
+    public AppointmentDTO( Appointment a ){
+        this.id = a.getId();
+        this.dentist = a.getDentist();
+        this.patient = a.getPatient();
+        this.dateTime = a.getDateTime();
     }
 
 }

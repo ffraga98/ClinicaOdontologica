@@ -27,6 +27,9 @@ public class Residence {
 
     @JsonIgnore
     public boolean isInvalid() {
-        return ( street.isEmpty() || number == null || location.isEmpty() || province.isEmpty() );
+        boolean result = ( street == null || number == null || location == null || province == null );
+        if( !result )
+            result = ( street.isEmpty() || location.isEmpty() || province.isEmpty() );
+        return result;
     }
 }

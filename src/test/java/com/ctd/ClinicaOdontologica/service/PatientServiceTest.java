@@ -33,21 +33,50 @@ class PatientServiceTest {
     PatientService patientService;
 
     @Test
-    void addPatient() throws BadRequestException {
-        Residence residence = new Residence();
-        PatientDTO patient = new PatientDTO(10L,"fer", "fraga", "102369",  residence, LocalDate.now());
+    void addValidPatient(){
+        Residence rMock = mock(Residence.class) ;
+        PatientDTO patient = new PatientDTO(10L,"test", "test", "test",  rMock, LocalDate.now());
         Assertions.assertDoesNotThrow(() -> patientService.add(patient));
-
-        PatientDTO failPatient = new PatientDTO(10L,"", "fraga", "102369",  residence, LocalDate.now());
-        Assertions.assertThrows(BadRequestException.class, () -> patientService.add(failPatient));
-
-
     }
 
     @Test
-    void findById() throws NotFoundException {
-        Residence residence = new Residence();
-        Patient patient = new Patient(10L, "salva", "diaz", residence, "1234", LocalDate.now() );
+    public void addingInvalidPatient(){
+        Residence rMock = mock(Residence.class) ;
+
+        Assertions.assertThrows(BadRequestException.class, () ->{
+            PatientDTO failPatient = new PatientDTO(10L,"", "test", "test",  rMock, LocalDate.now());
+            patientService.add(failPatient);
+        });
+        Assertions.assertThrows(BadRequestException.class, () ->{
+            PatientDTO failPatient = new PatientDTO(10L,"test", "", "test",  rMock, LocalDate.now());
+            patientService.add(failPatient);
+        });
+        Assertions.assertThrows(BadRequestException.class, () ->{
+            PatientDTO failPatient = new PatientDTO(10L,"test", "test", "",  rMock, LocalDate.now());
+            patientService.add(failPatient);
+        });
+        Assertions.assertThrows(BadRequestException.class, () ->{
+            PatientDTO failPatient = new PatientDTO(10L,null, "test", "test",  rMock, LocalDate.now());
+            patientService.add(failPatient);
+        });
+        Assertions.assertThrows(BadRequestException.class, () ->{
+            PatientDTO failPatient = new PatientDTO(10L,"test", null, "test",  rMock, LocalDate.now());
+            patientService.add(failPatient);
+        });
+        Assertions.assertThrows(BadRequestException.class, () ->{
+            PatientDTO failPatient = new PatientDTO(10L,"test", "test", null,  rMock, LocalDate.now());
+            patientService.add(failPatient);
+        });
+
+        Assertions.assertThrows(BadRequestException.class, () ->{
+            PatientDTO failPatient = new PatientDTO(10L,"test", "test", "test",  rMock, null);
+            patientService.add(failPatient);
+        });
+    }
+    @Test
+    void findById(){
+        Residence rMock = mock(Residence.class);
+        Patient patient = new Patient(10L, "test", "test", rMock, "test", LocalDate.now() );
         when(patientRepository.findById(any(Long.class))).thenReturn(Optional.of(patient));
 
         PatientDTO respuesta = Assertions.assertDoesNotThrow( () -> patientService.findById(10L));
@@ -55,5 +84,19 @@ class PatientServiceTest {
         Assertions.assertEquals(patient.getFirstName(), respuesta.getFirstName());
         Assertions.assertEquals(patient.getLastName(), respuesta.getLastName());
         Assertions.assertEquals(patient.getDNI(), respuesta.getDNI());
+        Assertions.assertEquals(patient.getHome(), respuesta.getHome());
+        Assertions.assertEquals(patient.getRegistrationDate(), respuesta.getRegistrationDate());
+    }
+
+
+    @Test
+    void findAll(){
+
+    }
+
+
+    @Test
+    void update() {
+        Assertions.assertTrue(false);
     }
 }

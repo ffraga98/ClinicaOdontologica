@@ -1,5 +1,6 @@
 package com.ctd.ClinicaOdontologica.model;
 
+import com.ctd.ClinicaOdontologica.dto.DentistDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -35,17 +36,10 @@ public class Dentist {
         this.registration = registration;
         this.appointments = new HashSet<>();
     }
-
-    @JsonIgnore
-    public boolean isInvalid() {
-        boolean result = false;
-        if (this == null) {
-            result = true;
-        } else if (firstName == null || lastName == null || registration == null) {
-            result = true;
-        } else if (firstName.isEmpty() || lastName.isEmpty()) {
-            result = true;
-        }
-        return result;
+    public Dentist( DentistDTO d) {
+        this.id = d.getId();
+        this.firstName = d.getFirstName();
+        this.lastName = d.getLastName();
+        this.registration = d.getRegistration();
     }
 }

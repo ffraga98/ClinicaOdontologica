@@ -29,34 +29,34 @@ public class AppointmentService implements IService<AppointmentDTO> {
     public static Logger logger = Logger.getLogger(AppointmentService.class);
 
     @Override
-    public void add(AppointmentDTO appointment) throws NotFoundException {
+    public AppointmentDTO add(AppointmentDTO appointment) throws NotFoundException {
         PatientDTO p = patientService.findById(appointment.getPatientId());
         DentistDTO d = dentistService.findById(appointment.getDentistId());
 
-        Patient patient = patientService.DTO2entity(p);
-        Dentist dentist = dentistService.DTO2entity(d);
-        Appointment a = DTO2entity(appointment);
+        Patient patient = new Patient(p);
+        Dentist dentist = new Dentist(d);
+        Appointment a = new Appointment(appointment);
 
-        appointmentRepository.save(a);
         logger.info("New appointment added.\n Dentist: Dr."+ dentist.getLastName() +"\n Patient:" + patient.getLastName() + "\n DateTime: " + a.getDateTime().toString());
+        return new AppointmentDTO( appointmentRepository.save(a) );
     }
 
     @Override
-    public void update(AppointmentDTO appointment) throws BadRequestException, NotFoundException {
+    public AppointmentDTO update(AppointmentDTO appointment) throws BadRequestException, NotFoundException {
         AppointmentDTO dto = this.findById(appointment.getId() );
-        Appointment a = DTO2entity(dto);
+        Appointment a = new Appointment(dto);
 
         //Lo busco
         try{
             PatientDTO p = patientService.findById(appointment.getPatientId());
             DentistDTO d = dentistService.findById(appointment.getDentistId());
             
-            a.setDentist(dentistService.DTO2entity(d));
-            a.setPatient(patientService.DTO2entity(p));
+            a.setDentist(new Dentist(d));
+            a.setPatient(new Patient(p));
             a.setDateTime( appointment.getDateTime() );
 
             logger.info("Appointment updated.\n Dentist: Dr."+ d.getLastName() +"\n Patient:" + p.getLastName() + "\n DateTime: " + a.getDateTime().toString());
-            appointmentRepository.save(a);
+            return new AppointmentDTO( appointmentRepository.save(a) );
         }catch(NotFoundException e ){
             throw new BadRequestException("Error AppointmentService : Appoint can't be updated because the dentist or patient entered doesn't exist.");
         }
@@ -65,7 +65,7 @@ public class AppointmentService implements IService<AppointmentDTO> {
     @Override
     public void delete(Long id) throws NotFoundException {
         AppointmentDTO dto = this.findById(id);
-        Appointment a = DTO2entity(dto);
+        Appointment a = new Appointment(dto);
         logger.info("Appointment deleted.");
         appointmentRepository.delete(a);
     }
@@ -76,7 +76,7 @@ public class AppointmentService implements IService<AppointmentDTO> {
 
         Set<AppointmentDTO> set = new HashSet<>();
         for (Appointment a : appointments) {
-            set.add(entity2DTO(a));
+            set.add(new AppointmentDTO(a));
         }
         return set;
     }
@@ -87,15 +87,7 @@ public class AppointmentService implements IService<AppointmentDTO> {
         if (!a.isPresent())
             throw new NotFoundException("Error AppointmentService : Appointment with ID : " + id + " doesn't exist.");
 
-        return entity2DTO(a.get());
-    }
-
-    private AppointmentDTO entity2DTO(Appointment a) {
-        return new AppointmentDTO(a.getId(), a.getDentist(), a.getPatient(), a.getDateTime());
-    }
-
-    public Appointment DTO2entity(AppointmentDTO dto) {
-        return new Appointment(dto.getId(), dto.getDateTime(), dto.getDentist(), dto.getPatient());
+        return new AppointmentDTO(a.get());
     }
 
 }
