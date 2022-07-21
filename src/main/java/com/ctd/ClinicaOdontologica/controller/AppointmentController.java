@@ -22,7 +22,7 @@ public class AppointmentController {
     public ResponseEntity<AppointmentDTO> add(@RequestBody AppointmentDTO appointmentDTO) {
         try {
             return ResponseEntity.ok( appointmentService.add(appointmentDTO) );
-        } catch (NotFoundException e) {
+        } catch (NotFoundException | BadRequestException e) {
             logger.error(e.getMessage());
             return ResponseEntity.badRequest().build();
         }

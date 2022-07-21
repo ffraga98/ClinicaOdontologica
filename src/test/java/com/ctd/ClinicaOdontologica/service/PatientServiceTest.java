@@ -90,7 +90,7 @@ class PatientServiceTest {
 
 
     @Test
-    void findAPacientThatDoesntExists(){
+    void findAPatientThatDoesntExists(){
         Residence rMock = mock(Residence.class);
         PatientDTO p = new PatientDTO(10L, null, null,  null, null, null);
         when(patientRepository.findById(any(Long.class))).thenReturn(Optional.empty());

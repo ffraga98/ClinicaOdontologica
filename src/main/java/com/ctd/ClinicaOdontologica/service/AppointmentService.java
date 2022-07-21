@@ -29,7 +29,10 @@ public class AppointmentService implements IService<AppointmentDTO> {
     public static Logger logger = Logger.getLogger(AppointmentService.class);
 
     @Override
-    public AppointmentDTO add(AppointmentDTO appointment) throws NotFoundException {
+    public AppointmentDTO add(AppointmentDTO appointment) throws NotFoundException, BadRequestException {
+        if (appointment.isInvalid()) {
+            throw new BadRequestException("Error AppointmentService: Wrong input values");
+        }
         PatientDTO p = patientService.findById(appointment.getPatientId());
         DentistDTO d = dentistService.findById(appointment.getDentistId());
 
@@ -89,5 +92,7 @@ public class AppointmentService implements IService<AppointmentDTO> {
 
         return new AppointmentDTO(a.get());
     }
+
+
 
 }

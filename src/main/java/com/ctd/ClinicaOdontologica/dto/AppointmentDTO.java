@@ -1,8 +1,6 @@
 package com.ctd.ClinicaOdontologica.dto;
 
 import com.ctd.ClinicaOdontologica.model.Appointment;
-import com.ctd.ClinicaOdontologica.model.Dentist;
-import com.ctd.ClinicaOdontologica.model.Patient;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
@@ -15,8 +13,8 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class AppointmentDTO {
     private Long id;
-    private Dentist dentist;
-    private Patient patient;
+    private DentistDTO dentist;
+    private PatientDTO patient;
 
     @JsonFormat(pattern="yyyy-MM-dd@HH:mm:ss")
     private LocalDateTime dateTime;
@@ -31,9 +29,16 @@ public class AppointmentDTO {
 
     public AppointmentDTO( Appointment a ){
         this.id = a.getId();
-        this.dentist = a.getDentist();
-        this.patient = a.getPatient();
+        this.dentist = new DentistDTO( a.getDentist());
+        this.patient = new PatientDTO( a.getPatient());
         this.dateTime = a.getDateTime();
+    }
+    @JsonIgnore
+    public boolean isInvalid() {
+        boolean result = (patient == null || dentist == null || dateTime == null);
+        if( !result )
+            result = ( getDentistId() == null || getPatientId() == null );
+        return result;
     }
 
 }

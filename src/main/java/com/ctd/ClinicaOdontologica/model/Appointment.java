@@ -33,8 +33,8 @@ public class Appointment {
 
     public Appointment( AppointmentDTO a ){
         this.id = a.getId();
-        this.dentist = a.getDentist();
-        this.patient = a.getPatient();
+        this.dentist = new Dentist( a.getDentist() );
+        this.patient = new Patient( a.getPatient() );
         this.dateTime = a.getDateTime();
     }
 }
