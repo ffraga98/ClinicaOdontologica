@@ -21,8 +21,8 @@ public class PatientIntegrationTest {
     private MockMvc mockMvc;
 
     @Test
-    void test01AddNewPatientAndFindAllPatient() throws Exception {
-        this.addPatient();
+    void test01AddNewPatientAndFindAllPatients() throws Exception {
+        String patient1 = this.addPatient();
 
         MvcResult response = this.mockMvc.perform(MockMvcRequestBuilders.get("/patient/")
                         .contentType(MediaType.APPLICATION_JSON))
@@ -31,8 +31,8 @@ public class PatientIntegrationTest {
         Assertions.assertFalse(response.getResponse().getContentAsString().isEmpty());
         String patientString = response.getResponse().getContentAsString();
         String esperado = "[{\"id\":1,\"firstName\":\"Paciente\",\"lastName\":\"Test\","
-                + "\"home\":{\"id\":1,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\","
-                + "\"province\":\"Provincia\"},\"registrationDate\":\"2022-02-01\",\"dni\":\"42142342\""
+                + "\"dni\":\"42142342\",\"registrationDate\":\"2022-02-01\","
+                + "\"home\":{\"id\":1,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\",\"province\":\"Provincia\"}"
                 + "}]";
         Assertions.assertEquals(esperado, patientString);
     }
@@ -42,47 +42,46 @@ public class PatientIntegrationTest {
         String jsonPost = "{\n"
                             + "\"firstName\" : \"Paciente\",\n"
                             + "\"lastName\" : \"Test\",\n"
-                            + "\"DNI\" : \"42142342\",\n"
+                            + "\"dni\" : \"42142342\",\n"
                             + "\"registrationDate\" : \"2022-02-01\",\n"
                             + "\"home\" : {\n"
                                     + "\"id\" : 1\n"
                             + "}\n"
                          + "}";
 
-        this.mockMvc.perform(MockMvcRequestBuilders.post("/patient")
+        MvcResult response = this.mockMvc.perform(MockMvcRequestBuilders.post("/patient")
                         .contentType(MediaType.APPLICATION_JSON).content(jsonPost))
                 .andDo(MockMvcResultHandlers.print()).andReturn();
 
-        MvcResult response = this.mockMvc.perform(MockMvcRequestBuilders.get("/patient/1")
+        Assertions.assertFalse(response.getResponse().getContentAsString().isEmpty());
+        String patient2 = response.getResponse().getContentAsString();
+
+        response = this.mockMvc.perform(MockMvcRequestBuilders.get("/patient/1")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andDo(MockMvcResultHandlers.print()).andReturn();
 
         Assertions.assertFalse(response.getResponse().getContentAsString().isEmpty());
         String patient1 = response.getResponse().getContentAsString();
 
-        response = this.mockMvc.perform(MockMvcRequestBuilders.get("/patient/2")
-                        .contentType(MediaType.APPLICATION_JSON))
-                .andDo(MockMvcResultHandlers.print()).andReturn();
-
-        Assertions.assertFalse(response.getResponse().getContentAsString().isEmpty());
-        String patient2 = response.getResponse().getContentAsString();
 
         String esperado = "{\"id\":1,\"firstName\":\"Paciente\",\"lastName\":\"Test\","
+                + "\"dni\":\"42142342\",\"registrationDate\":\"2022-02-01\","
                 + "\"home\":{\"id\":1,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\","
-                + "\"province\":\"Provincia\"},\"registrationDate\":\"2022-02-01\",\"dni\":\"42142342\""
+                + "\"province\":\"Provincia\"}"
                 + "}";
         Assertions.assertEquals(esperado, patient1);
 
         esperado = "{\"id\":2,\"firstName\":\"Paciente\",\"lastName\":\"Test\","
+                + "\"dni\":\"42142342\",\"registrationDate\":\"2022-02-01\","
                 + "\"home\":{\"id\":1,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\","
-                + "\"province\":\"Provincia\"},\"registrationDate\":\"2022-02-01\",\"dni\":\"42142342\""
+                + "\"province\":\"Provincia\"}"
                 + "}";
         Assertions.assertEquals(esperado, patient2);
     }
 
     @Test
     void test03AddingNewPatientAndFindAllPatients() throws Exception {
-        this.addPatient();
+        String patient3 = this.addPatient();
 
         MvcResult response = this.mockMvc.perform(MockMvcRequestBuilders.get("/patient/1")
                         .contentType(MediaType.APPLICATION_JSON))
@@ -98,29 +97,22 @@ public class PatientIntegrationTest {
         Assertions.assertFalse(response.getResponse().getContentAsString().isEmpty());
         String patient2 = response.getResponse().getContentAsString();
 
-        response = this.mockMvc.perform(MockMvcRequestBuilders.get("/patient/3")
-                        .contentType(MediaType.APPLICATION_JSON))
-                .andDo(MockMvcResultHandlers.print()).andReturn();
-
-        Assertions.assertFalse(response.getResponse().getContentAsString().isEmpty());
-        String patient3 = response.getResponse().getContentAsString();
-
 
         String esperado = "{\"id\":1,\"firstName\":\"Paciente\",\"lastName\":\"Test\","
-                + "\"home\":{\"id\":1,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\","
-                + "\"province\":\"Provincia\"},\"registrationDate\":\"2022-02-01\",\"dni\":\"42142342\""
+                + "\"dni\":\"42142342\",\"registrationDate\":\"2022-02-01\","
+                + "\"home\":{\"id\":1,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\",\"province\":\"Provincia\"}"
                 + "}";
         Assertions.assertEquals(esperado, patient1);
 
         esperado = "{\"id\":2,\"firstName\":\"Paciente\",\"lastName\":\"Test\","
-                + "\"home\":{\"id\":1,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\","
-                + "\"province\":\"Provincia\"},\"registrationDate\":\"2022-02-01\",\"dni\":\"42142342\""
+                + "\"dni\":\"42142342\",\"registrationDate\":\"2022-02-01\","
+                + "\"home\":{\"id\":1,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\",\"province\":\"Provincia\"}"
                 + "}";
         Assertions.assertEquals(esperado, patient2);
 
         esperado = "{\"id\":3,\"firstName\":\"Paciente\",\"lastName\":\"Test\","
-                + "\"home\":{\"id\":2,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\","
-                + "\"province\":\"Provincia\"},\"registrationDate\":\"2022-02-01\",\"dni\":\"42142342\""
+                + "\"dni\":\"42142342\",\"registrationDate\":\"2022-02-01\","
+                + "\"home\":{\"id\":2,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\",\"province\":\"Provincia\"}"
                 + "}";
         Assertions.assertEquals(esperado, patient3);
 
@@ -128,8 +120,6 @@ public class PatientIntegrationTest {
 
     @Test
     void test04DeletingPatientWithIdOneAndFindAllPatients() throws Exception {
-        this.addPatient();
-
         this.mockMvc.perform(MockMvcRequestBuilders.delete("/patient/2")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andDo(MockMvcResultHandlers.print()).andReturn();
@@ -150,14 +140,16 @@ public class PatientIntegrationTest {
 
 
         String esperado = "{\"id\":1,\"firstName\":\"Paciente\",\"lastName\":\"Test\","
+                + "\"dni\":\"42142342\",\"registrationDate\":\"2022-02-01\","
                 + "\"home\":{\"id\":1,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\","
-                + "\"province\":\"Provincia\"},\"registrationDate\":\"2022-02-01\",\"dni\":\"42142342\""
+                + "\"province\":\"Provincia\"}"
                 + "}";
         Assertions.assertEquals(esperado, patient1);
 
         esperado = "{\"id\":3,\"firstName\":\"Paciente\",\"lastName\":\"Test\","
+                + "\"dni\":\"42142342\",\"registrationDate\":\"2022-02-01\","
                 + "\"home\":{\"id\":2,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\","
-                + "\"province\":\"Provincia\"},\"registrationDate\":\"2022-02-01\",\"dni\":\"42142342\""
+                + "\"province\":\"Provincia\"}"
                 + "}";
         Assertions.assertEquals(esperado, patient3);
     }
@@ -193,18 +185,18 @@ public class PatientIntegrationTest {
         Assertions.assertFalse(response.getResponse().getContentAsString().isEmpty());
         String patient3 = response.getResponse().getContentAsString();
 
-        String esperado = "{\"id\":1,\"firstName\":\"Paciente\",\"lastName\":\"Test\",\"home\":{\"id\":1,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\",\"province\":\"Provincia\"},\"registrationDate\":\"2022-02-01\",\"dni\":\"42142342\"}";
+        String esperado = "{\"id\":1,\"firstName\":\"Paciente\",\"lastName\":\"Test\",\"dni\":\"42142342\",\"registrationDate\":\"2022-02-01\",\"home\":{\"id\":1,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\",\"province\":\"Provincia\"}}";
         Assertions.assertEquals(esperado, patient1);
 
-        esperado = "{\"id\":3,\"firstName\":\"Paciente\",\"lastName\":\"Test\",\"home\":{\"id\":2,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\",\"province\":\"Provincia\"},\"registrationDate\":\"2022-02-01\",\"dni\":\"42142342\"}";
+        esperado = "{\"id\":3,\"firstName\":\"Paciente\",\"lastName\":\"Test\",\"dni\":\"42142342\",\"registrationDate\":\"2022-02-01\",\"home\":{\"id\":2,\"street\":\"Calle\",\"number\":123,\"location\":\"Localidad\",\"province\":\"Provincia\"}}";
         Assertions.assertEquals(esperado, patient3);
     }
 
-    private void addPatient() throws Exception {
+    private String addPatient() throws Exception {
         String jsonPost = "{\n"
                 + "\"firstName\" : \"Paciente\",\n"
                 + "\"lastName\" : \"Test\",\n"
-                + "\"DNI\" : \"42142342\",\n"
+                + "\"dni\" : \"42142342\",\n"
                 + "\"registrationDate\" : \"2022-02-01\",\n"
                 + "\"home\" : {\n"
                         + "\"street\" : \"Calle\",\n"
@@ -214,9 +206,11 @@ public class PatientIntegrationTest {
                         + "}\n"
                 + "}";
 
-        this.mockMvc.perform(MockMvcRequestBuilders.post("/patient")
+        MvcResult response = this.mockMvc.perform(MockMvcRequestBuilders.post("/patient")
                         .contentType(MediaType.APPLICATION_JSON).content(jsonPost))
                 .andDo(MockMvcResultHandlers.print()).andReturn();
+
+        return response.getResponse().getContentAsString();
     }
 
     

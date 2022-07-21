@@ -19,6 +19,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
@@ -35,7 +36,9 @@ class PatientServiceTest {
     @Test
     void addValidPatient(){
         Residence rMock = mock(Residence.class) ;
-        PatientDTO patient = new PatientDTO(10L,"test", "test", "test",  rMock, LocalDate.now());
+        PatientDTO patient = new PatientDTO(null, "test", "test", "test", LocalDate.now(),  rMock);
+        Patient p = new Patient();
+        when(patientRepository.save(any(Patient.class))).thenReturn(p);
         Assertions.assertDoesNotThrow(() -> patientService.add(patient));
     }
 
@@ -44,59 +47,65 @@ class PatientServiceTest {
         Residence rMock = mock(Residence.class) ;
 
         Assertions.assertThrows(BadRequestException.class, () ->{
-            PatientDTO failPatient = new PatientDTO(10L,"", "test", "test",  rMock, LocalDate.now());
+            PatientDTO failPatient = new PatientDTO(null,"", "test", "test", LocalDate.now(),  rMock);
             patientService.add(failPatient);
         });
         Assertions.assertThrows(BadRequestException.class, () ->{
-            PatientDTO failPatient = new PatientDTO(10L,"test", "", "test",  rMock, LocalDate.now());
+            PatientDTO failPatient = new PatientDTO(null,"test", "", "test", LocalDate.now(),  rMock);
             patientService.add(failPatient);
         });
         Assertions.assertThrows(BadRequestException.class, () ->{
-            PatientDTO failPatient = new PatientDTO(10L,"test", "test", "",  rMock, LocalDate.now());
+            PatientDTO failPatient = new PatientDTO(null,"test", "test", "", LocalDate.now(),  rMock);
             patientService.add(failPatient);
         });
         Assertions.assertThrows(BadRequestException.class, () ->{
-            PatientDTO failPatient = new PatientDTO(10L,null, "test", "test",  rMock, LocalDate.now());
+            PatientDTO failPatient = new PatientDTO(null,"test", null, "test", LocalDate.now(),  rMock);
             patientService.add(failPatient);
         });
         Assertions.assertThrows(BadRequestException.class, () ->{
-            PatientDTO failPatient = new PatientDTO(10L,"test", null, "test",  rMock, LocalDate.now());
-            patientService.add(failPatient);
-        });
-        Assertions.assertThrows(BadRequestException.class, () ->{
-            PatientDTO failPatient = new PatientDTO(10L,"test", "test", null,  rMock, LocalDate.now());
+            PatientDTO failPatient = new PatientDTO(null,"test", "test", null, LocalDate.now(),  rMock);
             patientService.add(failPatient);
         });
 
         Assertions.assertThrows(BadRequestException.class, () ->{
-            PatientDTO failPatient = new PatientDTO(10L,"test", "test", "test",  rMock, null);
+            PatientDTO failPatient = new PatientDTO(null,"test", "test", "test", null,  rMock);
             patientService.add(failPatient);
         });
     }
     @Test
     void findById(){
         Residence rMock = mock(Residence.class);
-        Patient patient = new Patient(10L, "test", "test", rMock, "test", LocalDate.now() );
+        PatientDTO p = new PatientDTO(null, "test",  "test",  "test", LocalDate.now(), rMock );
+        Patient patient = new Patient( p );
         when(patientRepository.findById(any(Long.class))).thenReturn(Optional.of(patient));
 
         PatientDTO respuesta = Assertions.assertDoesNotThrow( () -> patientService.findById(10L));
 
         Assertions.assertEquals(patient.getFirstName(), respuesta.getFirstName());
         Assertions.assertEquals(patient.getLastName(), respuesta.getLastName());
-        Assertions.assertEquals(patient.getDNI(), respuesta.getDNI());
+        Assertions.assertEquals(patient.getDni(), respuesta.getDni());
         Assertions.assertEquals(patient.getHome(), respuesta.getHome());
         Assertions.assertEquals(patient.getRegistrationDate(), respuesta.getRegistrationDate());
     }
 
 
     @Test
-    void findAll(){
+    void findAPacientThatDoesntExists(){
+        Residence rMock = mock(Residence.class);
+        PatientDTO p = new PatientDTO(10L, null, null,  null, null, null);
+        when(patientRepository.findById(any(Long.class))).thenReturn(Optional.empty());
 
+       Assertions.assertThrows( NotFoundException.class, () -> patientService.findById(10L));
     }
 
 
     @Test
     void update() {
-        Assertions.assertTrue(false);
+            Residence rMock = mock(Residence.class);
+            PatientDTO dto = new PatientDTO(10L, "test", "test",  "test", LocalDate.now(),rMock);
+            Patient p = new Patient();
+            when(patientRepository.findById(any(Long.class))).thenReturn(Optional.of(p));
+            when(patientRepository.save(any(Patient.class))).thenReturn(p);
+            Assertions.assertDoesNotThrow( () -> patientService.update(dto));
     }
 }

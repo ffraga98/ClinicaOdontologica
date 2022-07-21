@@ -1,6 +1,5 @@
 package com.ctd.ClinicaOdontologica.controller;
 
-import org.aspectj.lang.annotation.Before;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -22,8 +21,6 @@ class AppointmentIntegrationTest {
     private MockMvc mockMvc;
     @Test
     void test01createNewAppointment() throws Exception {
-
-
         MvcResult response = this.mockMvc.perform(MockMvcRequestBuilders.get("/dentist/1")
                                 .contentType(MediaType.APPLICATION_JSON))
                 .andDo(MockMvcResultHandlers.print()).andReturn();
@@ -90,7 +87,6 @@ class AppointmentIntegrationTest {
 
     @Test
     void test03UpdateAppointment() throws Exception {
-
         MvcResult response = this.mockMvc.perform(MockMvcRequestBuilders.get("/dentist/1")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andDo(MockMvcResultHandlers.print()).andReturn();
@@ -128,7 +124,7 @@ class AppointmentIntegrationTest {
 
 
         String expected = "{\"id\":1," +
-                "\"dentist\":"+ dentistString +
+                "\"dentist\":" + dentistString +
                 ",\"patient\":" + patientString +
                 ",\"dateTime\":\"2022-07-20@13:30:00\"}";
         Assertions.assertEquals( expected, response.getResponse().getContentAsString());
@@ -184,7 +180,7 @@ class AppointmentIntegrationTest {
         String jsonPost = "{\n"
                 + "\"firstName\" : \"Paciente\",\n"
                 + "\"lastName\" : \"Test\",\n"
-                + "\"DNI\" : "+ DNI +",\n"
+                + "\"dni\" : "+ DNI +",\n"
                 + "\"registrationDate\" : \"2022-02-01\",\n"
                 + "\"home\" : {\n"
                 + "\"street\" : \"Calle\",\n"
