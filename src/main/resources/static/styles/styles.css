@@ -1,0 +1,26 @@
+html,
+body{
+    height: 100%;
+    font-size: 1rem;
+}
+
+.gradient {
+    background: rgb(162,217,255);
+    background: linear-gradient(0deg, rgba(162,217,255,0.45) 20%, rgba(96,194,212,1) 68%, rgba(92,156,244,1) 100%);
+}
+
+footer.gradient {
+    background: rgb(162,217,255);
+    background: linear-gradient(180deg, rgba(162,217,255,0.45) 20%, rgba(96,194,212,1) 68%, rgba(92,156,244,1) 100%);
+}
+
+.menu{
+    margin-top: 4rem;
+    font-size: 1.25rem;
+    color: #000
+}
+
+.container-fluid{
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+}
