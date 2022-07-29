@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental Clinic - Dentists</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+        
+    </head>
 
-</head>
 <body>
     <header>
-
-        <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+        <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
             <div class="container">
                 <a href="#" class="navbar-brand mb-0 h1">
-                    <img src="../img/medical-record.png" alt="" class="d-inline-block align-center" width="40" height="40">
+                    <img src="../img/icons8-dentist-64.png" alt="" class="d-inline-block align-center" width="45"
+                        height="45">
                     Dental Clinic
                 </a>
                 <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="appointments.html" class="nav-link active">Appointments</a>
+                            <a href="../index.html" class="nav-link active">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Registry</a>
+                            data-bs-toggle="dropdown" aria-expanded="false">Registry</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li>
-                                    <a href="dentists.html" class="dropdown-item">Dentists</a>
+                                    <a href="./dentists.html" class="dropdown-item">Dentists</a>
                                 </li>
                                 <li>
-                                    <a href="patients.html" class="dropdown-item">Patients</a>
+                                    <a href="./patients.html" class="dropdown-item">Patients</a>
                                 </li>
 
                             </ul>
@@ -48,107 +54,135 @@
     </header>
 
 
-<!-- 
-    <header>
-        <h2>
-            <a href="../index.html">Muelita <span aria-label="Emoji muela">🦷</span></a>
-        </h2>
-        <nav role="navigation">
-            <ul>
-                <li>
-                    <a href="#" aria-haspopup="true">Usuarios</a>
-                    <ul class="hidden">
-                        <li><a href="./registro-usuario.html">Registrar usuario</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" aria-haspopup="true">Odontólogos</a>
-                    <ul class="hidden">
-                        <li><a href="./registro-odontologo.html">Registrar odontólogo</a></li>
-                        <li><a href="#">Ver odontólogos</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" aria-haspopup="true">Pacientes</a>
-                    <ul class="hidden">
-                        <li><a href="./registro-paciente.html">Registrar paciente</a></li>
-                        <li><a href="./lista-pacientes.html">Ver pacientes</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" aria-haspopup="true">Turnos</a>
-                    <ul class="hidden">
-                        <li><a href="./registro-turno.html">Sacar turno</a></li>
-                        <li><a href="./lista-turnos.html">Ver turnos</a></li>
-                    </ul>
-                </li>
-                <li><a href="/logout">Cerrar sesión</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
-        <section class="informacion" id="informacionOdontologos">
-            <h2 class="informacionTitulo">Información Odontólogos</h2>
-            <table class="listado" id="tablaOdontologos">
-                <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Matrícula</th>
-                    <th colspan="2"></th>
-                </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </section>
-        <section id="actualizarOdontologo" class="display-none">
-        <div class="form-container">
-            <div class="form">
-                <h2>Actualizar odontólogo</h2>
-                <form action="" method="POST" name="odontologo" id="formularioOdontologo">
-                    <input type="text"
-                           name="nombre"
-                           id="nombreOdontologo"
-                           placeholder="Nombre"
-                           required>
-
-                    <input type="text"
-                           name="apellido"
-                           id="apellidoOdontologo"
-                           placeholder="Apellido"
-                           required=>
-
-                    <input type="number"
-                           name="dniOdontologo"
-                           id="dniOdontologo"
-                           placeholder="DNI"
-                           required=>
-
-                    <input type="number"
-                           name="matricula"
-                           id="matricula"
-                           placeholder="Matricula"
-                           required=>
-
-                    <div class="conteiner-btn">
-                        <input type="reset"
-                               class="input-btn reset-btn form-btn left-btn"
-                               value="Resetear"
-                               id="resetearOdontologoBtn">
-
-                        <input type="submit"
-                               class="input-btn form-btn right-btn"
-                               value="Actualizar"
-                               id="actualizarOdontologoBtn">
-                    </div>
-                </form>
+        <div class="container-fluid gradient menu align-center">
+            <div class="row">
+                <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
+                    <form action="" method="POST" name="patient" id="form_patient">
+                        <div class="form-group" id="form_patient">
+                            <label for="data">Personal details</label> <br>
+                            <input type="text" id="firstName" name="firstName" placeholder="First Name" required> <br>
+                            <input type="text" id="lastName" name="LastName" placeholder="Last name" required> <br>
+                            <input type="number" id="dni" name="dni" placeholder="DNI" required> <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="data">Home Details</label> <br>
+                            <input type="text" id="street" name="street" placeholder="Street" required> <br>
+                            <input type="text" id="number" name="number" placeholder="Number" required> <br>
+                            <input type="text" id="location" name="location" placeholder="Location" required> <br>
+                            <input type="text" id="province" name="province" placeholder="Province" required> <br>
+                            <input type="date" id="date" name="date" required> <br>
+                        </div>
+                            
+                        <div class="container p-4 pb-0 d-flex align-center justify-content-center">
+                            <button type="reset" class="btn btn-outline-secondary btn-floating m-1">Clear</button>
+                            <button type="submit" class="btn btn-primary btn-floating m-1">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-8 d-flex justify-content-center">
+                    <section id="patient_info">
+                        <div class="container d-flex d-inline-block">
+                            <img src="../img/medical-record.png" alt="" class="d-inline-block me-2 align-center" width="35"
+                            height="35">
+                            <h2 class="info_title">Patient Registry</h2>
+                        </div>
+                        <table class="table table-lg table-striped" id="patient_table">
+                            <thead class="thead-light">
+                            <tr>
+                                <th scope="col">#</th> 
+                                <th scope="col">Name</th>
+                                <th scope="col">Last name</th>
+                                <th scope="col">DNI</th>
+                                <th class="d-none d-xl-table-cell" scope="col">Street</th>
+                                <th class="d-none d-xl-table-cell" scope="col">Number</th>
+                                <th class="d-none d-lg-table-cell" scope="col">Location</th>
+                                <th class="d-none d-md-table-cell" scope="col ">Province</th>
+                                <th scope="col">RegistrationDate</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>111221345</td>
+                                <td class="d-none d-xl-table-cell"> Siempre Vive</td>
+                                <td class="d-none d-xl-table-cell"> 123</td>
+                                <td class="d-none d-lg-table-cell"> La Matanza</td>
+                                <td class="d-none d-md-table-cell"> Buenos Aires</td>
+                                <td>11-03-22</td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </div>
         </div>
-    </section>
-    </main> -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="0.45" d="M0,288L24,261.3C48,235,96,181,144,160C192,139,240,149,288,144C336,139,384,117,432,133.3C480,149,528,203,576,186.7C624,171,672,85,720,64C768,43,816,85,864,122.7C912,160,960,192,1008,213.3C1056,235,1104,245,1152,224C1200,203,1248,149,1296,128C1344,107,1392,117,1416,122.7L1440,128L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg>
+    </main>
 
-    <footer>
-    </footer>
-</body>
-</html>
+    <!-- Footer -->
+    <footer class="gradient text-center text-lg-start text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4 text-center">
+                <!-- Google -->
+                <a
+                class="btn btn-outline-primary btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-google"></i
+                    ></a>
+                    
+                    <!-- Linkedin -->
+                    <a
+                    class="btn btn-outline-primary btn-floating m-1 "
+                    href="https://www.linkedin.com/in/ferfraga/"
+                    role="button"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                        
+                        <!-- Github -->
+                        <a
+                        class="btn btn-outline-primary btn-floating m-1"
+                        href="https://github.com/ffraga98"
+                        role="button"
+                        target="_blank"
+                        ><i class="fab fa-github"></i
+                            ></a>
+                        </section>
+                        <!-- Section: Social media -->
+                        <hr class="mb-4" />
+                        <!-- Section: CTA -->
+                      <section class="">
+                          <p class="d-flex justify-content-center align-items-center">
+                          <span class="me-3">Register for free</span>
+                          <button type="button" class="btn btn-outline-light btn-rounded">
+                            Sign up!
+                          </button>
+                        </p>
+                    </section>
+                      <!-- Section: CTA -->
+                
+                
+        </div>
+        <!-- Grid container -->
+        
+        <!-- Copyright -->
+        <div
+             class="text-center p-3"
+             style="background-color: rgba(0, 0, 0, 0.2)"
+             >
+             © 2020 Copyright: Fernando Fraga
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+      <script src="https://kit.fontawesome.com/d26cd04ef9.js" crossorigin="anonymous"></script>
+      <script src="../scripts/postPatient.js" crossorigin="anonymous"></script>
+    </body>
+
+    </html>

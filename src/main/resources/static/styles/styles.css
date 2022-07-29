@@ -10,12 +10,11 @@ body{
 }
 
 footer.gradient {
-    background: rgb(162,217,255);
-    background: linear-gradient(180deg, rgba(162,217,255,0.45) 20%, rgba(96,194,212,1) 68%, rgba(92,156,244,1) 100%);
+    background: rgb(253,254,255);
+    background: linear-gradient(180deg, rgba(253,254,255,0.4290091036414566) 0%, rgba(96,194,212,1) 68%, rgba(92,156,244,1) 100%);
 }
 
 .menu{
-    margin-top: 4rem;
     font-size: 1.25rem;
     color: #000
 }
@@ -23,4 +22,13 @@ footer.gradient {
 .container-fluid{
     padding-top: 2rem;
     padding-bottom: 0rem;
+}
+
+.form-group{
+    padding-bottom: 15px;
+}
+
+input{
+    margin-bottom: 3px;
+    margin-top: 3px;
 }
