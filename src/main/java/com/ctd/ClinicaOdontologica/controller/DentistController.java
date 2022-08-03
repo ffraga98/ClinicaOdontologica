@@ -39,7 +39,7 @@ public class DentistController {
             return ResponseEntity.ok(dentistService.findById(id));
         } catch (NotFoundException e) { 
             logger.error(e.getMessage());
-            return ResponseEntity.badRequest().build();
+            return ResponseEntity.notFound().build();
         }
     }
 
@@ -50,7 +50,7 @@ public class DentistController {
             return ResponseEntity.ok().build();
         } catch (NotFoundException e) {
             logger.error(e.getMessage());
-            return ResponseEntity.badRequest().build();
+            return ResponseEntity.notFound().build();
         }
     }
 

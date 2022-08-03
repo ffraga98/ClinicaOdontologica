@@ -24,7 +24,7 @@ public class PatientController {
             return ResponseEntity.ok( patientService.add(patientDTO) );
         } catch (BadRequestException e) {
             logger.error(e.getMessage());
-            throw new RuntimeException(e);
+            return ResponseEntity.badRequest().build();
         }
     }
 
@@ -39,7 +39,7 @@ public class PatientController {
             return ResponseEntity.ok(patientService.findById(id));
         } catch (NotFoundException e) {
             logger.error(e.getMessage());
-            throw new RuntimeException(e);
+            return ResponseEntity.notFound().build();
         }
     }
 
@@ -51,7 +51,7 @@ public class PatientController {
             return ResponseEntity.ok().build();
         } catch (NotFoundException e) {
             logger.error(e.getMessage());
-            throw new RuntimeException(e);
+            return ResponseEntity.notFound().build();
         }
     }
 
@@ -61,10 +61,10 @@ public class PatientController {
             return ResponseEntity.ok( patientService.update(patientDTO) );
         } catch (BadRequestException e) {
             logger.error(e.getMessage());
-            throw new RuntimeException(e);
+            return ResponseEntity.badRequest().build();
         } catch (NotFoundException e) {
             logger.error(e.getMessage());
-            throw new RuntimeException(e);
+            return ResponseEntity.notFound().build();
         }
     }
 }

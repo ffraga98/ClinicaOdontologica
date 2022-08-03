@@ -47,4 +47,7 @@ public class PatientDTO {
         return result;
     }
 
+    public PatientDTO(Long id) {
+        this.id = id;
+    }
 }

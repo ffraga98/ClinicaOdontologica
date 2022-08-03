@@ -29,4 +29,8 @@ public class DentistDTO {
         this.lastName = d.getLastName();
         this.registration = d.getRegistration();
     }
+
+    public DentistDTO(Long id) {
+        this.id = id;
+    }
 }

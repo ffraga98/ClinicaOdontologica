@@ -12,4 +12,7 @@ public class ResidenceDTO {
     private String location;
     private String province;
 
+    public ResidenceDTO(Long id) {
+        this.id = id;
+    }
 }

@@ -39,7 +39,7 @@ public class AppointmentController {
             return ResponseEntity.ok(appointmentService.findById(id));
         } catch (NotFoundException e) {
             logger.error(e.getMessage());
-            return ResponseEntity.badRequest().build();
+            return ResponseEntity.notFound().build();
         }
     }
 

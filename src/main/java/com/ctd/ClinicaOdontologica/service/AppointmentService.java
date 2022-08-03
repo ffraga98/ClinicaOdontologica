@@ -40,6 +40,9 @@ public class AppointmentService implements IService<AppointmentDTO> {
         Dentist dentist = new Dentist(d);
         Appointment a = new Appointment(appointment);
 
+        a.setPatient(patient);
+        a.setDentist(dentist);
+
         logger.info("New appointment added.\n Dentist: Dr."+ dentist.getLastName() +"\n Patient:" + patient.getLastName() + "\n DateTime: " + a.getDateTime().toString());
         return new AppointmentDTO( appointmentRepository.save(a) );
     }

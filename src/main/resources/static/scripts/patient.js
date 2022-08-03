@@ -15,16 +15,17 @@ function addPatient() {
     const number = document.getElementById("number");
     const location = document.getElementById("location");
     const province = document.getElementById("province");
-
+    const date = new Date()
     const formData = {
-      firstName: firstName.value,
-      lastName: lastName.value,
-      dni: dni.value,
-      residence: {
-          street: street.value,
-          number: number.value,
-          location: location.value,
-          province: province.value,
+        firstName: firstName.value,
+        lastName: lastName.value,
+        dni: dni.value,
+        registrationDate: date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate(),
+        home: {
+            street: street.value,
+            number: number.value,
+            location: location.value,
+            province: province.value,
       }
     };
 
@@ -36,7 +37,7 @@ function addPatient() {
         body: JSON.stringify(formData),
     };
 
-    fetch("http://localhost:8080/patients/", settings)
+    fetch("http://localhost:8080/patient", settings)
       .then((response) => response.json())
       .then(() => alert("Patient added"))
       .catch(() => alert("Oops! Failed to load patient"))
