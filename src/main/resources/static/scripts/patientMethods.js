@@ -1,29 +1,5 @@
 var url = "http://localhost:8080/patient/"
 
-
-function printPatientHTML( patient ){
-  const patientTable = document
-      .getElementById("patient_table")
-      .getElementsByTagName("tbody")[0];
-
-  const {home} = patient;
-  patientTable.innerHTML += `
-          <tr>
-              <td scope="row">${patient.id}</td>
-              <td>${patient.firstName} ${patient.lastName}</td>
-              <td>${patient.dni}</td>
-              <td class="d-none d-xl-table-cell">${home.street} ${home.number}</td>
-              <td class="d-none d-lg-table-cell">${home.location}</td>
-              <td class="d-none d-md-table-cell">${home.province}</td>
-              <td>${patient.registrationDate}</td>
-              <td><button class="btn btn-outline-danger" onClick="updatePatient(${patient.id})"><i class="fa-solid fa-trash-can"></i></button>
-              <button class="btn btn-outline-primary" onClick="deletePatient(${patient.id})"><i class="fa-solid fa-pen-to-square"></i></button></td>
-            </tr>
-      `;
-}
-
-
-
 function loadPatient(){
   const firstName = document.getElementById("firstName");
   const lastName = document.getElementById("lastName");
@@ -52,7 +28,6 @@ function loadPatient(){
       province: province.value,
     }
   };
-  let string = JSON.stringify(data);
   return data
 }
 
@@ -87,10 +62,9 @@ function addPatient() {
 
   fetch(url, settings)
       .then((response) => response.json())
-      .then(() => alert("Patient added"))
+      .then(() => loadPatients())
       .catch(() => alert("Oops! Failed to load patient"))
       .finally(() => {
-        loadPatients();
         clearForm();
       } )
 }
@@ -99,9 +73,59 @@ function loadPatients() {
   fetch(url)
       .then((response) => response.json())
       .then((data) => {
+          deletePatientsHTML();
         data.forEach((patient) => {
           printPatientHTML(patient);
         });
       });
 }
+
+function deletePatientsHTML(){
+  const patientTable = document
+      .getElementById("patient_table")
+      .getElementsByTagName("tbody")[0];
+
+  patientTable.innerHTML = "";
+}
+
+function deletePatient(patient_id){
+    fetch(url + patient_id, {
+        method: 'DELETE',
+    }).then(res => {
+        let patient = document.getElementsByTagName("tr")
+        let tr = null;
+
+            patient.innerHTML = "";
+        })
+}
+
+function printPatientHTML( patient ){
+    const patientTable = document
+        .getElementById("patient_table")
+        .getElementsByTagName("tbody")[0];
+
+    const {home} = patient;
+    patientTable.innerHTML += `
+          <tr id="${patient.id}">
+              <td scope="row">${patient.id}</td>
+              <td>${patient.firstName} ${patient.lastName}</td>
+              <td>${patient.dni}</td>
+              <td class="d-none d-xl-table-cell">${home.street} ${home.number}</td>
+              <td class="d-none d-lg-table-cell">${home.location}</td>
+              <td class="d-none d-md-table-cell">${home.province}</td>
+              <td>${patient.registrationDate}</td>
+              <td><button class="delete_btn btn btn-outline-danger " id="${patient.id}"><i class="fa-solid fa-trash-can"></i></button>
+              <button class="btn btn-outline-primary" onClick="deletePatient(${patient.id})"><i class="fa-solid fa-pen-to-square"></i></button></td>
+            </tr>
+      `;
+
+    let btn = document.getElementById(`${patient.id}`)
+        .getElementsByTagName("button")[0];
+    btn.addEventListener( "click", event => {
+        event.preventDefault();
+        deletePatient(patient.id);
+    })
+}
+
+
 export { loadPatients, addPatient };
