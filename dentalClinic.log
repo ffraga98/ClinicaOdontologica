@@ -2838,3 +2838,590 @@
 2022-07-21 18:09:48 INFO  AppointmentService:72 - Appointment deleted.
 2022-07-21 18:09:48 INFO  PatientService:80 - Patient with ID : nullupdated.
 2022-07-21 18:09:48 INFO  PatientService:48 - Patient with dni : testadded.
+2022-07-27 12:18:11 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-07-27 12:18:13 INFO  DentistService:69 - All dentists were listed.
+2022-07-27 12:18:13 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-07-27 12:18:13 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-07-27 12:18:13 INFO  DentistService:58 - Dentist with ID:2deleted.
+2022-07-27 12:18:14 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-07-27 12:18:15 INFO  DentistService:32 - Dentist with Registration : 123 added.
+2022-07-27 12:18:15 INFO  DentistService:49 - Dentist with Registration : 123 updated.
+2022-07-27 12:18:15 INFO  ResidenceService:26 - New residence added.
+2022-07-27 12:18:15 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-07-27 12:18:16 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-07-27 12:18:16 INFO  ResidenceService:26 - New residence added.
+2022-07-27 12:18:16 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-07-27 12:18:16 INFO  PatientService:87 - Patient with ID:2deleted.
+2022-07-27 12:18:16 INFO  PatientController:50 - Patient deleted.
+2022-07-27 12:18:18 INFO  AppointmentService:61 - Appointment updated.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-07-27T12:18:18.694235575
+2022-07-27 12:18:18 INFO  AppointmentService:43 - New appointment added.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-07-27T12:18:18.837656206
+2022-07-27 12:18:18 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-07-27 12:18:18 INFO  DentistService:32 - Dentist with Registration : 2 added.
+2022-07-27 12:18:18 INFO  ResidenceService:26 - New residence added.
+2022-07-27 12:18:18 INFO  PatientService:48 - Patient with dni : 1111111added.
+2022-07-27 12:18:18 INFO  ResidenceService:26 - New residence added.
+2022-07-27 12:18:18 INFO  PatientService:48 - Patient with dni : 222222added.
+2022-07-27 12:18:18 INFO  ResidenceService:26 - New residence added.
+2022-07-27 12:18:18 INFO  PatientService:48 - Patient with dni : 333333added.
+2022-07-27 12:18:19 INFO  AppointmentService:43 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-27 12:18:19 INFO  AppointmentService:43 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-27 12:18:19 INFO  AppointmentService:61 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-20T13:30
+2022-07-27 12:18:19 INFO  AppointmentService:72 - Appointment deleted.
+2022-07-27 12:18:19 INFO  PatientService:80 - Patient with ID : nullupdated.
+2022-07-27 12:18:19 INFO  PatientService:48 - Patient with dni : testadded.
+2022-07-27 15:47:01 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-07-27 15:47:01 INFO  DentistService:69 - All dentists were listed.
+2022-07-27 15:47:01 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-07-27 15:47:01 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-07-27 15:47:01 INFO  DentistService:58 - Dentist with ID:2deleted.
+2022-07-27 15:47:01 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-07-27 15:47:02 INFO  DentistService:32 - Dentist with Registration : 123 added.
+2022-07-27 15:47:02 INFO  DentistService:49 - Dentist with Registration : 123 updated.
+2022-07-27 15:47:02 INFO  ResidenceService:26 - New residence added.
+2022-07-27 15:47:02 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-07-27 15:47:02 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-07-27 15:47:02 INFO  ResidenceService:26 - New residence added.
+2022-07-27 15:47:02 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-07-27 15:47:02 INFO  PatientService:87 - Patient with ID:2deleted.
+2022-07-27 15:47:02 INFO  PatientController:50 - Patient deleted.
+2022-07-27 15:47:03 INFO  AppointmentService:61 - Appointment updated.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-07-27T15:47:02.977345726
+2022-07-27 15:47:03 INFO  AppointmentService:43 - New appointment added.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-07-27T15:47:03.095373434
+2022-07-27 15:47:03 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-07-27 15:47:03 INFO  DentistService:32 - Dentist with Registration : 2 added.
+2022-07-27 15:47:03 INFO  ResidenceService:26 - New residence added.
+2022-07-27 15:47:03 INFO  PatientService:48 - Patient with dni : 1111111added.
+2022-07-27 15:47:03 INFO  ResidenceService:26 - New residence added.
+2022-07-27 15:47:03 INFO  PatientService:48 - Patient with dni : 222222added.
+2022-07-27 15:47:03 INFO  ResidenceService:26 - New residence added.
+2022-07-27 15:47:03 INFO  PatientService:48 - Patient with dni : 333333added.
+2022-07-27 15:47:03 INFO  AppointmentService:43 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-27 15:47:03 INFO  AppointmentService:43 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-27 15:47:03 INFO  AppointmentService:61 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-20T13:30
+2022-07-27 15:47:03 INFO  AppointmentService:72 - Appointment deleted.
+2022-07-27 15:47:03 INFO  PatientService:80 - Patient with ID : nullupdated.
+2022-07-27 15:47:03 INFO  PatientService:48 - Patient with dni : testadded.
+2022-07-29 11:18:04 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-07-29 11:18:04 INFO  DentistService:69 - All dentists were listed.
+2022-07-29 11:18:04 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-07-29 11:18:04 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-07-29 11:18:04 INFO  DentistService:58 - Dentist with ID:2deleted.
+2022-07-29 11:18:04 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-07-29 11:18:05 INFO  DentistService:32 - Dentist with Registration : 123 added.
+2022-07-29 11:18:05 INFO  DentistService:49 - Dentist with Registration : 123 updated.
+2022-07-29 11:18:05 INFO  ResidenceService:26 - New residence added.
+2022-07-29 11:18:05 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-07-29 11:18:05 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-07-29 11:18:05 INFO  ResidenceService:26 - New residence added.
+2022-07-29 11:18:05 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-07-29 11:18:05 INFO  PatientService:87 - Patient with ID:2deleted.
+2022-07-29 11:18:05 INFO  PatientController:50 - Patient deleted.
+2022-07-29 11:18:06 INFO  AppointmentService:61 - Appointment updated.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-07-29T11:18:06.424474402
+2022-07-29 11:18:06 INFO  AppointmentService:43 - New appointment added.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-07-29T11:18:06.572749550
+2022-07-29 11:18:06 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-07-29 11:18:06 INFO  DentistService:32 - Dentist with Registration : 2 added.
+2022-07-29 11:18:06 INFO  ResidenceService:26 - New residence added.
+2022-07-29 11:18:06 INFO  PatientService:48 - Patient with dni : 1111111added.
+2022-07-29 11:18:06 INFO  ResidenceService:26 - New residence added.
+2022-07-29 11:18:06 INFO  PatientService:48 - Patient with dni : 222222added.
+2022-07-29 11:18:06 INFO  ResidenceService:26 - New residence added.
+2022-07-29 11:18:06 INFO  PatientService:48 - Patient with dni : 333333added.
+2022-07-29 11:18:06 INFO  AppointmentService:43 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-29 11:18:06 INFO  AppointmentService:43 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-15T19:50:12
+2022-07-29 11:18:06 INFO  AppointmentService:61 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test
+ DateTime: 2022-07-20T13:30
+2022-07-29 11:18:07 INFO  AppointmentService:72 - Appointment deleted.
+2022-07-29 11:18:07 INFO  PatientService:80 - Patient with ID : nullupdated.
+2022-07-29 11:18:07 INFO  PatientService:48 - Patient with dni : testadded.
+2022-08-03 18:23:55 INFO  ResidenceService:26 - New residence added.
+2022-08-03 18:23:55 INFO  PatientService:48 - Patient with dni : 1234added.
+2022-08-03 18:24:04 INFO  ResidenceService:26 - New residence added.
+2022-08-03 18:24:04 INFO  PatientService:48 - Patient with dni : 1234added.
+2022-08-03 18:24:06 INFO  PatientService:82 - Patient with ID:1deleted.
+2022-08-03 18:24:06 INFO  PatientController:50 - Patient deleted.
+2022-08-03 18:28:32 ERROR PatientController:53 - Error PatientService : Patient with ID : 1 doesn't exist.
+2022-08-03 18:47:36 INFO  ResidenceService:26 - New residence added.
+2022-08-03 18:47:36 INFO  PatientService:48 - Patient with dni : 1234added.
+2022-08-03 22:21:30 INFO  PatientService:75 - Patient with ID : nullupdated.
+2022-08-03 22:21:30 INFO  PatientService:48 - Patient with dni : testadded.
+2022-08-03 22:21:33 INFO  AppointmentService:64 - Appointment updated.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-08-03T22:21:32.883689130
+2022-08-03 22:21:34 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-08-03T22:21:34.019831938
+2022-08-03 22:21:34 INFO  DentistService:32 - Dentist with Registration : 123 added.
+2022-08-03 22:21:34 INFO  DentistService:49 - Dentist with Registration : 123 updated.
+2022-08-03 22:21:43 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:21:43 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:21:43 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:21:43 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:21:43 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:21:43 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:21:44 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:21:44 INFO  PatientService:82 - Patient with ID:2deleted.
+2022-08-03 22:21:44 INFO  PatientController:50 - Patient deleted.
+2022-08-03 22:21:44 ERROR PatientController:41 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:21:44 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:21:44 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:21:44 ERROR PatientController:66 - Error PatientService : Patient with ID : 1 doesn't exist.
+2022-08-03 22:21:44 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-08-03 22:21:44 INFO  DentistService:32 - Dentist with Registration : 2 added.
+2022-08-03 22:21:44 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:21:44 INFO  PatientService:48 - Patient with dni : 1111111added.
+2022-08-03 22:21:44 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:21:44 INFO  PatientService:48 - Patient with dni : 222222added.
+2022-08-03 22:21:44 ERROR AppointmentController:26 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:21:44 ERROR AppointmentController:26 - Error PatientService : Patient with ID : 1 doesn't exist.
+2022-08-03 22:21:44 ERROR AppointmentController:41 - Error AppointmentService : Appointment with ID : 1 doesn't exist.
+2022-08-03 22:21:44 ERROR AppointmentController:52 - Error AppointmentService : Appointment with ID : 2 doesn't exist.
+2022-08-03 22:21:44 ERROR AppointmentController:26 - Error PatientService : Patient with ID : 1 doesn't exist.
+2022-08-03 22:21:44 ERROR AppointmentController:62 - Error AppointmentService : Appointment with ID : 1 doesn't exist.
+2022-08-03 22:21:44 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:21:44 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:21:44 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:21:45 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:21:45 INFO  DentistService:58 - Dentist with ID:2deleted.
+2022-08-03 22:21:45 ERROR DentistController:41 - Error DentistService : Dentist with ID : 2 doesn't exist.
+2022-08-03 22:21:45 INFO  DentistService:49 - Dentist with Registration : 1 updated.
+2022-08-03 22:25:33 INFO  PatientService:75 - Patient with ID : nullupdated.
+2022-08-03 22:25:33 INFO  PatientService:48 - Patient with dni : testadded.
+2022-08-03 22:25:33 INFO  AppointmentService:64 - Appointment updated.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-08-03T22:25:33.587804475
+2022-08-03 22:25:33 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-08-03T22:25:33.741731638
+2022-08-03 22:25:33 INFO  DentistService:32 - Dentist with Registration : 123 added.
+2022-08-03 22:25:33 INFO  DentistService:49 - Dentist with Registration : 123 updated.
+2022-08-03 22:25:36 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:25:36 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:25:36 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:25:36 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:25:36 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:25:36 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:25:36 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:25:36 INFO  PatientService:82 - Patient with ID:2deleted.
+2022-08-03 22:25:36 INFO  PatientController:50 - Patient deleted.
+2022-08-03 22:25:36 ERROR PatientController:41 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:25:36 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:25:36 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:25:36 INFO  PatientService:75 - Patient with ID : 1updated.
+2022-08-03 22:25:36 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-08-03 22:25:36 INFO  DentistService:32 - Dentist with Registration : 2 added.
+2022-08-03 22:25:36 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:25:36 INFO  PatientService:48 - Patient with dni : 1111111added.
+2022-08-03 22:25:36 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:25:36 INFO  PatientService:48 - Patient with dni : 222222added.
+2022-08-03 22:25:36 ERROR AppointmentController:26 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:25:36 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-15T19:50:12.121
+2022-08-03 22:25:36 ERROR PatientController:41 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:25:36 ERROR AppointmentController:52 - Error AppointmentService : Appointment with ID : 2 doesn't exist.
+2022-08-03 22:25:36 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-15T19:50:12.123
+2022-08-03 22:25:36 INFO  AppointmentService:64 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-20T13:30
+2022-08-03 22:25:37 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:25:37 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:25:37 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:25:37 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:25:37 INFO  DentistService:58 - Dentist with ID:2deleted.
+2022-08-03 22:25:37 ERROR DentistController:41 - Error DentistService : Dentist with ID : 2 doesn't exist.
+2022-08-03 22:25:37 INFO  DentistService:49 - Dentist with Registration : 1 updated.
+2022-08-03 22:28:20 INFO  PatientService:75 - Patient with ID : nullupdated.
+2022-08-03 22:28:20 INFO  PatientService:48 - Patient with dni : testadded.
+2022-08-03 22:28:20 INFO  AppointmentService:64 - Appointment updated.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-08-03T22:28:20.843350036
+2022-08-03 22:28:20 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-08-03T22:28:20.982367215
+2022-08-03 22:28:21 INFO  DentistService:32 - Dentist with Registration : 123 added.
+2022-08-03 22:28:21 INFO  DentistService:49 - Dentist with Registration : 123 updated.
+2022-08-03 22:28:23 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:28:23 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:28:23 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:28:23 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:28:23 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:28:23 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:28:23 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:28:23 INFO  PatientService:82 - Patient with ID:2deleted.
+2022-08-03 22:28:23 INFO  PatientController:50 - Patient deleted.
+2022-08-03 22:28:23 ERROR PatientController:41 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:28:23 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:28:23 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:28:23 INFO  PatientService:75 - Patient with ID : 1updated.
+2022-08-03 22:28:24 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-08-03 22:28:24 INFO  DentistService:32 - Dentist with Registration : 2 added.
+2022-08-03 22:28:24 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:28:24 INFO  PatientService:48 - Patient with dni : 1111111added.
+2022-08-03 22:28:24 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:28:24 INFO  PatientService:48 - Patient with dni : 222222added.
+2022-08-03 22:28:24 ERROR AppointmentController:26 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:28:24 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-15T19:50:12.121
+2022-08-03 22:28:24 ERROR PatientController:41 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:28:24 ERROR AppointmentController:52 - Error AppointmentService : Appointment with ID : 2 doesn't exist.
+2022-08-03 22:28:24 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-15T19:50:12.123
+2022-08-03 22:28:24 INFO  AppointmentService:64 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-20T13:30
+2022-08-03 22:28:24 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:28:24 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:28:24 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:28:24 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:28:24 INFO  DentistService:58 - Dentist with ID:2deleted.
+2022-08-03 22:28:24 ERROR DentistController:41 - Error DentistService : Dentist with ID : 2 doesn't exist.
+2022-08-03 22:28:24 INFO  DentistService:49 - Dentist with Registration : 1 updated.
+2022-08-03 22:32:38 INFO  PatientService:75 - Patient with ID : nullupdated.
+2022-08-03 22:32:38 INFO  PatientService:48 - Patient with dni : testadded.
+2022-08-03 22:32:38 INFO  AppointmentService:64 - Appointment updated.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-08-03T22:32:38.523292923
+2022-08-03 22:32:38 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-08-03T22:32:38.643509675
+2022-08-03 22:32:38 INFO  DentistService:32 - Dentist with Registration : 123 added.
+2022-08-03 22:32:38 INFO  DentistService:49 - Dentist with Registration : 123 updated.
+2022-08-03 22:32:41 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:32:41 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:32:41 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:32:41 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:32:41 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:32:41 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:32:41 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:32:41 INFO  PatientService:82 - Patient with ID:2deleted.
+2022-08-03 22:32:41 INFO  PatientController:50 - Patient deleted.
+2022-08-03 22:32:41 ERROR PatientController:41 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:32:42 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:32:42 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:32:42 INFO  PatientService:75 - Patient with ID : 1updated.
+2022-08-03 22:32:42 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-08-03 22:32:42 INFO  DentistService:32 - Dentist with Registration : 2 added.
+2022-08-03 22:32:42 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:32:42 INFO  PatientService:48 - Patient with dni : 1111111added.
+2022-08-03 22:32:42 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:32:42 INFO  PatientService:48 - Patient with dni : 222222added.
+2022-08-03 22:32:42 ERROR AppointmentController:26 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:32:42 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-15T19:50:12.121
+2022-08-03 22:32:42 ERROR PatientController:41 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:32:42 ERROR AppointmentController:52 - Error AppointmentService : Appointment with ID : 2 doesn't exist.
+2022-08-03 22:32:42 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-15T19:50:12.123
+2022-08-03 22:32:42 INFO  AppointmentService:64 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-20T13:30
+2022-08-03 22:32:42 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:32:42 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:32:42 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:32:42 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:32:43 INFO  DentistService:58 - Dentist with ID:2deleted.
+2022-08-03 22:32:43 ERROR DentistController:41 - Error DentistService : Dentist with ID : 2 doesn't exist.
+2022-08-03 22:32:43 INFO  DentistService:49 - Dentist with Registration : 1 updated.
+2022-08-03 22:34:41 INFO  PatientService:75 - Patient with ID : nullupdated.
+2022-08-03 22:34:41 INFO  PatientService:48 - Patient with dni : testadded.
+2022-08-03 22:34:41 INFO  AppointmentService:64 - Appointment updated.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-08-03T22:34:41.736477067
+2022-08-03 22:34:41 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-08-03T22:34:41.864516587
+2022-08-03 22:34:41 INFO  DentistService:32 - Dentist with Registration : 123 added.
+2022-08-03 22:34:41 INFO  DentistService:49 - Dentist with Registration : 123 updated.
+2022-08-03 22:34:43 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:34:43 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:34:43 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:34:43 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:34:43 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:34:43 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:34:43 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:34:44 INFO  PatientService:82 - Patient with ID:2deleted.
+2022-08-03 22:34:44 INFO  PatientController:50 - Patient deleted.
+2022-08-03 22:34:44 ERROR PatientController:41 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:34:44 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:34:44 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:34:44 INFO  PatientService:75 - Patient with ID : 1updated.
+2022-08-03 22:34:44 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-08-03 22:34:44 INFO  DentistService:32 - Dentist with Registration : 2 added.
+2022-08-03 22:34:44 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:34:44 INFO  PatientService:48 - Patient with dni : 1111111added.
+2022-08-03 22:34:44 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:34:44 INFO  PatientService:48 - Patient with dni : 222222added.
+2022-08-03 22:34:44 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-15T19:50:12.121
+2022-08-03 22:34:44 ERROR AppointmentController:26 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:34:44 ERROR PatientController:41 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:34:44 ERROR AppointmentController:52 - Error AppointmentService : Appointment with ID : 2 doesn't exist.
+2022-08-03 22:34:44 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-15T19:50:12.123
+2022-08-03 22:34:44 INFO  AppointmentService:64 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-20T13:30
+2022-08-03 22:34:44 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:34:44 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:34:44 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:34:44 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:34:44 INFO  DentistService:58 - Dentist with ID:2deleted.
+2022-08-03 22:34:44 ERROR DentistController:41 - Error DentistService : Dentist with ID : 2 doesn't exist.
+2022-08-03 22:34:44 INFO  DentistService:49 - Dentist with Registration : 1 updated.
+2022-08-03 22:36:04 INFO  PatientService:75 - Patient with ID : nullupdated.
+2022-08-03 22:36:04 INFO  PatientService:48 - Patient with dni : testadded.
+2022-08-03 22:36:04 INFO  AppointmentService:64 - Appointment updated.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-08-03T22:36:04.837472164
+2022-08-03 22:36:04 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-08-03T22:36:04.944280344
+2022-08-03 22:36:05 INFO  DentistService:32 - Dentist with Registration : 123 added.
+2022-08-03 22:36:05 INFO  DentistService:49 - Dentist with Registration : 123 updated.
+2022-08-03 22:36:07 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:36:07 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:36:07 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:36:07 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:36:07 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:36:07 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:36:08 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:36:08 INFO  PatientService:82 - Patient with ID:2deleted.
+2022-08-03 22:36:08 INFO  PatientController:50 - Patient deleted.
+2022-08-03 22:36:08 ERROR PatientController:41 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:36:09 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:36:09 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:36:09 INFO  PatientService:75 - Patient with ID : 1updated.
+2022-08-03 22:36:09 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-08-03 22:36:09 INFO  DentistService:32 - Dentist with Registration : 2 added.
+2022-08-03 22:36:09 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:36:09 INFO  PatientService:48 - Patient with dni : 1111111added.
+2022-08-03 22:36:10 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:36:10 INFO  PatientService:48 - Patient with dni : 222222added.
+2022-08-03 22:36:10 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-15T19:50:12.121
+2022-08-03 22:36:10 ERROR AppointmentController:26 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:36:10 ERROR PatientController:41 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:36:10 ERROR AppointmentController:52 - Error AppointmentService : Appointment with ID : 2 doesn't exist.
+2022-08-03 22:36:10 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-15T19:50:12.123
+2022-08-03 22:36:10 INFO  AppointmentService:64 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-20T13:30
+2022-08-03 22:36:11 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:36:11 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:36:11 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:36:11 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:36:11 INFO  DentistService:58 - Dentist with ID:2deleted.
+2022-08-03 22:36:11 ERROR DentistController:41 - Error DentistService : Dentist with ID : 2 doesn't exist.
+2022-08-03 22:36:12 INFO  DentistService:49 - Dentist with Registration : 1 updated.
+2022-08-03 22:40:32 INFO  PatientService:75 - Patient with ID : nullupdated.
+2022-08-03 22:40:32 INFO  PatientService:48 - Patient with dni : testadded.
+2022-08-03 22:40:33 INFO  AppointmentService:64 - Appointment updated.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-08-03T22:40:32.950601583
+2022-08-03 22:40:33 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-08-03T22:40:33.050002373
+2022-08-03 22:40:33 INFO  DentistService:32 - Dentist with Registration : 123 added.
+2022-08-03 22:40:33 INFO  DentistService:49 - Dentist with Registration : 123 updated.
+2022-08-03 22:40:34 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:40:35 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:40:35 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:40:35 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:40:35 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:40:35 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:40:35 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:40:35 INFO  PatientService:82 - Patient with ID:2deleted.
+2022-08-03 22:40:35 INFO  PatientController:50 - Patient deleted.
+2022-08-03 22:40:35 ERROR PatientController:41 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:40:35 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:40:35 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:40:35 INFO  PatientService:75 - Patient with ID : 1updated.
+2022-08-03 22:40:35 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-08-03 22:40:35 INFO  DentistService:32 - Dentist with Registration : 2 added.
+2022-08-03 22:40:35 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:40:35 INFO  PatientService:48 - Patient with dni : 1111111added.
+2022-08-03 22:40:35 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-15T19:50:12.121
+2022-08-03 22:40:35 ERROR AppointmentController:52 - Error AppointmentService : Appointment with ID : 2 doesn't exist.
+2022-08-03 22:40:35 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-15T19:50:12.123
+2022-08-03 22:40:35 INFO  AppointmentService:64 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-20T13:30
+2022-08-03 22:40:35 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:40:35 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:40:35 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:40:35 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:40:35 INFO  DentistService:58 - Dentist with ID:2deleted.
+2022-08-03 22:40:35 ERROR DentistController:41 - Error DentistService : Dentist with ID : 2 doesn't exist.
+2022-08-03 22:40:35 INFO  DentistService:49 - Dentist with Registration : 1 updated.
+2022-08-03 22:41:28 INFO  PatientService:75 - Patient with ID : nullupdated.
+2022-08-03 22:41:28 INFO  PatientService:48 - Patient with dni : testadded.
+2022-08-03 22:41:30 INFO  AppointmentService:64 - Appointment updated.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-08-03T22:41:30.069474802
+2022-08-03 22:41:30 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.null
+ Patient:null
+ DateTime: 2022-08-03T22:41:30.397296522
+2022-08-03 22:41:30 INFO  DentistService:32 - Dentist with Registration : 123 added.
+2022-08-03 22:41:30 INFO  DentistService:49 - Dentist with Registration : 123 updated.
+2022-08-03 22:41:40 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:41:40 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:41:40 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:41:40 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:41:40 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:41:40 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:41:40 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:41:40 INFO  PatientService:82 - Patient with ID:2deleted.
+2022-08-03 22:41:40 INFO  PatientController:50 - Patient deleted.
+2022-08-03 22:41:40 ERROR PatientController:41 - Error PatientService : Patient with ID : 2 doesn't exist.
+2022-08-03 22:41:41 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:41:41 INFO  PatientService:48 - Patient with dni : 42142342added.
+2022-08-03 22:41:41 INFO  PatientService:75 - Patient with ID : 1updated.
+2022-08-03 22:41:41 INFO  DentistService:32 - Dentist with Registration : 1 added.
+2022-08-03 22:41:41 INFO  DentistService:32 - Dentist with Registration : 2 added.
+2022-08-03 22:41:41 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:41:41 INFO  PatientService:48 - Patient with dni : 1111111added.
+2022-08-03 22:41:41 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-15T19:50:12.121
+2022-08-03 22:41:41 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-15T19:50:12.121
+2022-08-03 22:41:41 INFO  AppointmentService:75 - Appointment deleted.
+2022-08-03 22:41:41 ERROR AppointmentController:41 - Error AppointmentService : Appointment with ID : 2 doesn't exist.
+2022-08-03 22:41:41 INFO  AppointmentService:46 - New appointment added.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-15T19:50:12.123
+2022-08-03 22:41:41 INFO  AppointmentService:64 - Appointment updated.
+ Dentist: Dr.Test
+ Patient:Test1
+ DateTime: 2022-07-20T13:30
+2022-08-03 22:41:41 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:41:41 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:41:41 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:41:41 INFO  DentistService:32 - Dentist with Registration : 0 added.
+2022-08-03 22:41:41 INFO  DentistService:58 - Dentist with ID:2deleted.
+2022-08-03 22:41:41 ERROR DentistController:41 - Error DentistService : Dentist with ID : 2 doesn't exist.
+2022-08-03 22:41:41 INFO  DentistService:49 - Dentist with Registration : 1 updated.
+2022-08-03 22:43:16 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:43:16 INFO  PatientService:48 - Patient with dni : 1234added.
+2022-08-03 22:45:01 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:45:01 INFO  PatientService:48 - Patient with dni : 123added.
+2022-08-03 22:45:12 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:45:12 INFO  PatientService:48 - Patient with dni : 123added.
+2022-08-03 22:47:36 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:47:36 INFO  PatientService:48 - Patient with dni : 1234added.
+2022-08-03 22:51:58 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:51:58 INFO  PatientService:48 - Patient with dni : 1234added.
+2022-08-03 22:56:14 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:56:14 INFO  PatientService:48 - Patient with dni : 1324added.
+2022-08-03 22:56:21 INFO  ResidenceService:26 - New residence added.
+2022-08-03 22:56:21 INFO  PatientService:48 - Patient with dni : 1234added.
+2022-08-03 23:07:40 INFO  ResidenceService:26 - New residence added.
+2022-08-03 23:07:40 INFO  PatientService:48 - Patient with dni : 1234added.
+2022-08-03 23:07:42 INFO  PatientService:82 - Patient with ID:1deleted.
+2022-08-03 23:07:42 INFO  PatientController:50 - Patient deleted.
+2022-08-03 23:07:57 INFO  ResidenceService:26 - New residence added.
+2022-08-03 23:07:57 INFO  PatientService:48 - Patient with dni : 234added.
+2022-08-03 23:12:25 INFO  ResidenceService:26 - New residence added.
+2022-08-03 23:12:25 INFO  PatientService:48 - Patient with dni : 1234added.
+2022-08-03 23:12:33 INFO  ResidenceService:26 - New residence added.
+2022-08-03 23:12:33 INFO  PatientService:48 - Patient with dni : 1324added.
+2022-08-03 23:12:58 INFO  PatientService:82 - Patient with ID:2deleted.
+2022-08-03 23:12:58 INFO  PatientController:50 - Patient deleted.
+2022-08-03 23:13:05 INFO  PatientService:82 - Patient with ID:1deleted.
+2022-08-03 23:13:05 INFO  PatientController:50 - Patient deleted.

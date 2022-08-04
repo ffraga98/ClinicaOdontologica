@@ -91,12 +91,7 @@ function deletePatientsHTML(){
 function deletePatient(patient_id){
     fetch(url + patient_id, {
         method: 'DELETE',
-    }).then(res => {
-        let patient = document.getElementsByTagName("tr")
-        let tr = null;
-
-            patient.innerHTML = "";
-        })
+    }).then(res => location.reload())
 }
 
 function printPatientHTML( patient ){
@@ -114,18 +109,11 @@ function printPatientHTML( patient ){
               <td class="d-none d-lg-table-cell">${home.location}</td>
               <td class="d-none d-md-table-cell">${home.province}</td>
               <td>${patient.registrationDate}</td>
-              <td><button class="delete_btn btn btn-outline-danger " id="${patient.id}"><i class="fa-solid fa-trash-can"></i></button>
-              <button class="btn btn-outline-primary" onClick="deletePatient(${patient.id})"><i class="fa-solid fa-pen-to-square"></i></button></td>
+              <td><button class="delete_btn btn btn-outline-danger " id="delete_${patient.id}"><i class="fa-solid fa-trash-can"></i></button>
+              <button class="btn btn-outline-primary" id="delete_${patient.id}"><i class="fa-solid fa-pen-to-square"></i></button></td>
             </tr>
       `;
-
-    let btn = document.getElementById(`${patient.id}`)
-        .getElementsByTagName("button")[0];
-    btn.addEventListener( "click", event => {
-        event.preventDefault();
-        deletePatient(patient.id);
-    })
 }
 
 
-export { loadPatients, addPatient };
+export { loadPatients, addPatient, deletePatient };

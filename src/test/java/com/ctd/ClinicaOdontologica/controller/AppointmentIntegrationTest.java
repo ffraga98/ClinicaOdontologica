@@ -31,8 +31,8 @@ class AppointmentIntegrationTest {
         Assertions.assertFalse(response.getResponse().getContentAsString().equals(""));
 
         String expected = "{\"id\":1," +
-                "\"dentist\":"+ getDentistJson(1L) +
-                ",\"patient\":" + getPatientJson(2L) +
+                "\"dentist\":"+ getDentistJson(2L) +
+                ",\"patient\":" + getPatientJson(1L) +
                 ",\"dateTime\":\"2022-07-15@19:50:12\"}";
 
         Assertions.assertEquals( expected, response.getResponse().getContentAsString());
@@ -184,9 +184,8 @@ class AppointmentIntegrationTest {
         this.addDentist(1);
         this.addDentist(2);
         this.addPatient("1111111");
-        this.addPatient("222222 ");
 
-        this.addAppointment(1L,2L);
+        this.addAppointment(2L,1L);
         this.addAppointment(2L,1L);
     }
 }
